@@ -9,22 +9,15 @@ mashle = ["Lancer", "Mash", "Finn", "Dot"]
 random_character = random.randint(0, 3)
 random_ability = random.randint(0, 2)
 
-abilities = ["STEALLLLL", "Black Flash", "Boogie Woogie"]
+abilities = ["Hollow Purple", "Divergent fist", "Boogie Woogie", "heavenly restriction"]
 
 selected_random_ability = abilities[random_ability]
 
 print(Fore.GREEN + selected_random_ability)
 print(Style.RESET_ALL)
 
-user_input = input("Which Character is it?")
+for x in jujutsu_kaisen:
+    print(x)
 
-match user_input:
-    case "":
-        print("You failed")
+user_input = input("Which Character is it?\n")
 
-if selected_random_ability == "STEALLLLL":
-    print("Kazuma")
-elif selected_random_ability == "Black Flash":
-    print("Yuji")
-elif selected_random_ability == "Boogie Woogie":
-    print("Todo")
