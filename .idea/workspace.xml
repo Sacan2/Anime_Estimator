@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Muss find a better way for this&#10;Deprission is hitting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anime_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/anime_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.anime_lists">
+  <component name="RunManager" selected="Python.main">
     <configuration name="anime_lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Anime_Estimator" />
       <option name="ENV_FILES" value="" />
@@ -140,13 +141,33 @@
       <option name="project" value="LOCAL" />
       <updated>1709404855336</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Muss find a better way for this&#10;Deprission is hitting">
+      <option name="closed" value="true" />
+      <created>1709585556637</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709585556637</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="Second Commit&#10;nothing much just some first tries. Need to find a solution for the check that the user_input and selected_random_ability are correct." />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Commit&#10;nothing much just some first tries. Need to find a solution for the check that the user_input and selected_random_ability are correct." />
+    <MESSAGE value="Muss find a better way for this&#10;Deprission is hitting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Muss find a better way for this&#10;Deprission is hitting" />
   </component>
 </project>
