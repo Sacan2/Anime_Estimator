@@ -20,23 +20,24 @@ for x in jujutsu_kaisen:
     print(x)
 
 game_start = True
-
 while game_start:
-    user_input = input("Which Character is it?\n")
-    if selected_random_ability == "Hollow Purple" and user_input == "Gojo":
-        game_start = False
-        print("Du hast gewonnen")
+    user_input = input("Welcher Charakter ist es?\n")
 
-    elif selected_random_ability == "Divergent fist" and user_input == "Yuji":
-        game_start = False
-        print("Du hast gewonnen")
+    match user_input.lower():
+        case "yuji" if selected_random_ability == "Divergent fist":
+            game_start = False
+            print("Du hast gewonnen")
 
-    elif selected_random_ability == "Boogie Woogie" and user_input == "Todo":
-        game_start = False
-        print("Du hast gewonnen")
+        case "gojo" if selected_random_ability == "Hollow Purple":
+            game_start = False
+            print("Du hast gewonnen")
 
-    elif selected_random_ability == "heavenly restriction" and user_input == "Toji":
-        game_start = False
-        print("Du hast gewonnen")
-    else:
-        print("Versuch nochmal, du spastie!!!!!!!!")
+        case "todo" if selected_random_ability == "Boogie Woogie":
+            game_start = False
+            print("Du hast gewonnen")
+
+        case "toji" if selected_random_ability == "heavenly restriction":
+            game_start = False
+            print("Du hast gewonnen")
+        case _:
+            print("Du bist kacke")
