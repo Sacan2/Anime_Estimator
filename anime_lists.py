@@ -1,11 +1,9 @@
-chainsaw_man = {
+anime_list = {
     "Denji": "Chainsaw",
     "Makima": "Bang",
-    "Power": "Blood Hammer"
-}
-
-jujutsu_kaisen = {
+    "Power": "Blood Hammer",
     "Yuji": "Fivergent fist",
     "Gojo": "Hollow Pruple",
     "Megumin": "Ten Shadow"
 }
+
