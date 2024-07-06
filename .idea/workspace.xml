@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Jeder Name wird nur einmal ausgegeben.&#10;Ich erstelle ein Objekt mit einer Random Zahl von 0 bis zum Maximalen Wert vom JSON. Sobald die Zahl entnommen ist wird der Index genommen und benutzt, um den Charakter raus zu nehmen. Dannach wird der Index entfernt damit sich nichts doppelt.">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Größen vom Fenster eingebaut&#10;Das Fenster wird immer in der Mitte der Bildschirmes geöffnet und es müsste villeicht noch mit den größen nachgeholfen werden. Das nur wenn es mit den Bilder nicht passt.">
+      <change afterPath="$PROJECT_DIR$/Game/Bilder/hollow.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/main.py" afterDir="false" />
     </list>
@@ -65,6 +66,8 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Game" />
+      <recent name="C:\Users\serha\PycharmProject\Anime_Estimator" />
+      <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Game\Bilder" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -206,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718737893661</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Größen vom Fenster eingebaut&#10;Das Fenster wird immer in der Mitte der Bildschirmes geöffnet und es müsste villeicht noch mit den größen nachgeholfen werden. Das nur wenn es mit den Bilder nicht passt.">
+      <option name="closed" value="true" />
+      <created>1718819770602</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718819770602</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +241,7 @@
     <MESSAGE value="Dictionary wurde durch ein Array ersetzt.&#10;Ich habe Dictory benutzt, um die Namen zu speichern. Habe dafür das Array entfernt." />
     <MESSAGE value="Ich habe nur vier weitere random Charaktere hinzugefügt.&#10;Eine Methode erstellen die, sobald ein random Charakter ausgewählt wird, dieser für die anderen nciht mehr zu verfügung stehen." />
     <MESSAGE value="Jeder Name wird nur einmal ausgegeben.&#10;Ich erstelle ein Objekt mit einer Random Zahl von 0 bis zum Maximalen Wert vom JSON. Sobald die Zahl entnommen ist wird der Index genommen und benutzt, um den Charakter raus zu nehmen. Dannach wird der Index entfernt damit sich nichts doppelt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Jeder Name wird nur einmal ausgegeben.&#10;Ich erstelle ein Objekt mit einer Random Zahl von 0 bis zum Maximalen Wert vom JSON. Sobald die Zahl entnommen ist wird der Index genommen und benutzt, um den Charakter raus zu nehmen. Dannach wird der Index entfernt damit sich nichts doppelt." />
+    <MESSAGE value="Größen vom Fenster eingebaut&#10;Das Fenster wird immer in der Mitte der Bildschirmes geöffnet und es müsste villeicht noch mit den größen nachgeholfen werden. Das nur wenn es mit den Bilder nicht passt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Größen vom Fenster eingebaut&#10;Das Fenster wird immer in der Mitte der Bildschirmes geöffnet und es müsste villeicht noch mit den größen nachgeholfen werden. Das nur wenn es mit den Bilder nicht passt." />
   </component>
 </project>

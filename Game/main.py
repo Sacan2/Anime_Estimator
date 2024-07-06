@@ -1,6 +1,7 @@
 import anime_lists as aL
 import random
 import tkinter as tk
+from PIL import Image, ImageTk
 
 #Fenster machen
 root = tk.Tk()
@@ -30,10 +31,20 @@ character_name_4 = list(aL.anime_list.keys())[random_character_number_4]
 character_kraft_4 = list(aL.anime_list.values())[random_character_number_4]
 aL.anime_list.pop(character_name_4, None)
 
-text_1 = tk.Label(root, text=character_name_1)
-text_2 = tk.Label(root, text=character_name_2)
-text_1.pack()
-text_2.pack()
+image = Image.open('./Game/Bilder/hollow.jpg')
+imag1 = image.resize((250, 200))
+python_bild = ImageTk.PhotoImage(imag1)
+tk.Label(image=python_bild).place(x=120, y=0)
+
+knopf_oben_links = tk.Button(root, text=character_name_1)
+knopf_oben_rechts = tk.Button(root, text=character_name_2)
+knopf_unten_links = tk.Button(root, text=character_name_3)
+knopf_unten_rechts = tk.Button(root, text=character_name_4)
+
+knopf_oben_links.place(x=50, y=250, width=120, height=40)
+knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
+knopf_unten_links.place(x=50, y=350, width=120, height=40)
+knopf_unten_rechts.place(x=300, y=350, width=120, height=40)
 
 window_width = 500
 window_height = 500
@@ -43,8 +54,8 @@ screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
 # find the center point
-center_x = int(screen_width/2 - window_width / 2)
-center_y = int(screen_height/2 - window_height / 2)
+center_x = int(screen_width / 2 - window_width / 2)
+center_y = int(screen_height / 2 - window_height / 2)
 
 # set the position of the window to the center of the screen
 root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
