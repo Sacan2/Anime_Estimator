@@ -6,47 +6,35 @@ from PIL import Image, ImageTk
 #Fenster machen
 root = tk.Tk()
 
-#Charakter Namen aus der Liste nehmen und dafür sorgen, dass es sich nicht doppelt.
-character_number_for_1 = len(aL.anime_list)
-random_character_number_1 = random.randrange(0, character_number_for_1)
-character_name_1 = list(aL.anime_list.keys())[random_character_number_1]
-character_kraft_1 = list(aL.anime_list.values())[random_character_number_1]
-aL.anime_list.pop(character_name_1, None)
 
-character_number_for_2 = len(aL.anime_list)
-random_character_number_2 = random.randrange(0, character_number_for_2)
-character_name_2 = list(aL.anime_list.keys())[random_character_number_2]
-character_kraft_2 = list(aL.anime_list.values())[random_character_number_2]
-aL.anime_list.pop(character_name_2, None)
+def any_click(event):
+    print("hallo")
 
-character_number_for_3 = len(aL.anime_list)
-random_character_number_3 = random.randrange(0, character_number_for_3)
-character_name_3 = list(aL.anime_list.keys())[random_character_number_3]
-character_kraft_3 = list(aL.anime_list.values())[random_character_number_3]
-aL.anime_list.pop(character_name_3, None)
 
-character_number_for_4 = len(aL.anime_list)
-random_character_number_4 = random.randrange(0, character_number_for_4)
-character_name_4 = list(aL.anime_list.keys())[random_character_number_4]
-character_kraft_4 = list(aL.anime_list.values())[random_character_number_4]
-aL.anime_list.pop(character_name_4, None)
+def get_anime_name():
+    character_number_length_list = len(aL.anime_list)
+    random_character_number = random.randrange(0, character_number_length_list)
+    character_name = list(aL.anime_list.keys())[random_character_number]
+    aL.anime_list.pop(character_name, None)
+    return character_name
+
 
 image = Image.open('./Game/Bilder/hollow.jpg')
-imag1 = image.resize((250, 200))
-python_bild = ImageTk.PhotoImage(imag1)
+image_groeße = image.resize((250, 200))
+python_bild = ImageTk.PhotoImage(image_groeße)
 tk.Label(image=python_bild).place(x=120, y=0)
 
-knopf_oben_links = tk.Button(root, text=character_name_1)
-knopf_oben_rechts = tk.Button(root, text=character_name_2)
-knopf_unten_links = tk.Button(root, text=character_name_3)
-knopf_unten_rechts = tk.Button(root, text=character_name_4)
+knopf_oben_links = tk.Button(root, text=get_anime_name())
+knopf_oben_rechts = tk.Button(root, text=get_anime_name())
+knopf_unten_links = tk.Button(root, text=get_anime_name())
+knopf_unten_rechts = tk.Button(root, text=get_anime_name(), command=bam)
 
 knopf_oben_links.place(x=50, y=250, width=120, height=40)
 knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
 knopf_unten_links.place(x=50, y=350, width=120, height=40)
 knopf_unten_rechts.place(x=300, y=350, width=120, height=40)
 
-window_width = 500
+window_width = 480
 window_height = 500
 
 # get the screen dimension
