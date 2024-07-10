@@ -7,10 +7,6 @@ from PIL import Image, ImageTk
 root = tk.Tk()
 
 
-def any_click(event):
-    print("hallo")
-
-
 def get_anime_name():
     character_number_length_list = len(aL.anime_list)
     random_character_number = random.randrange(0, character_number_length_list)
@@ -19,15 +15,20 @@ def get_anime_name():
     return character_name
 
 
-image = Image.open('./Game/Bilder/hollow.jpg')
+image = Image.open(aL.anime_list["Megumin"])
 image_groeße = image.resize((250, 200))
 python_bild = ImageTk.PhotoImage(image_groeße)
 tk.Label(image=python_bild).place(x=120, y=0)
 
+
+def any_click():
+    print(image)
+
+
 knopf_oben_links = tk.Button(root, text=get_anime_name())
 knopf_oben_rechts = tk.Button(root, text=get_anime_name())
 knopf_unten_links = tk.Button(root, text=get_anime_name())
-knopf_unten_rechts = tk.Button(root, text=get_anime_name(), command=bam)
+knopf_unten_rechts = tk.Button(root, text=get_anime_name(), command=any_click)
 
 knopf_oben_links.place(x=50, y=250, width=120, height=40)
 knopf_oben_rechts.place(x=300, y=250, width=120, height=40)

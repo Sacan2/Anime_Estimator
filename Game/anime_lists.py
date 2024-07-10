@@ -1,6 +1,6 @@
 anime_list = {
-    "Denji": "Chainsaw",
-    "Makima": "Bang",
-    "Yuji": "Fivergent fist",
-    "Gojo": "Hollow Pruple",
+    "Denji": "./Game/Bilder/denji.jpg",
+    "Megumin": "./Game/Bilder/megumin.jpg",
+    "Emma": "./Game/Bilder/nacken_tatto.png",
+    "Gojo": "./Game/Bilder/hollow.jpg",
 }
