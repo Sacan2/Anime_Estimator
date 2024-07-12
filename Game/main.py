@@ -5,8 +5,8 @@ from PIL import Image, ImageTk
 
 #Fenster machen
 root = tk.Tk()
-
-image = Image.open(aL.anime_list["Megumin"])
+random_Bild_index = random.randrange(0, len(aL.anime_list))
+image = Image.open(list(aL.anime_list.values())[random_Bild_index])
 image_groeße = image.resize((250, 200))
 python_bild = ImageTk.PhotoImage(image_groeße)
 tk.Label(image=python_bild).place(x=120, y=0)

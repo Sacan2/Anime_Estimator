@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Das Bild wird nicht länger hard gecoded vom Pfad direkt abgefrufen, sondern ihm Dictionary. &#10;In der Dictionary habe ich alle Pfade und dazu jeweilige Bilder eingefügt, sodass man direkt über den Namen ein Bild hat.">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Nur Kommentare hinzugefügt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720644721002</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Nur Kommentare hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1720644874423</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720644874423</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,6 +276,7 @@
     <MESSAGE value="4 Knöpfe aber ohne funktionen.&#10;Alles ist zentriert und hat seine größen angepasst. Jetzt muss die Logik gemacht werden." />
     <MESSAGE value="get_anime_name() wurde erstellt damit es den großen Codeblock ersetzt." />
     <MESSAGE value="Das Bild wird nicht länger hard gecoded vom Pfad direkt abgefrufen, sondern ihm Dictionary. &#10;In der Dictionary habe ich alle Pfade und dazu jeweilige Bilder eingefügt, sodass man direkt über den Namen ein Bild hat." />
-    <option name="LAST_COMMIT_MESSAGE" value="Das Bild wird nicht länger hard gecoded vom Pfad direkt abgefrufen, sondern ihm Dictionary. &#10;In der Dictionary habe ich alle Pfade und dazu jeweilige Bilder eingefügt, sodass man direkt über den Namen ein Bild hat." />
+    <MESSAGE value="Nur Kommentare hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nur Kommentare hinzugefügt" />
   </component>
 </project>
