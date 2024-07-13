@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Die Bilder sind jetzt random und nicht mehr fest gecoded">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Game/Bilder/roxy.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/anime_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/anime_lists.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/main.py" afterDir="false" />
@@ -257,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720798228010</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Der Input wird von der Methode any_click (Die ich definitiv umbennen werde) erkannt. Jetzt kann ich anfang zu prüfen ob die wahl die richtige ist zum Bild. Villeicht fange ich vorher an das Problem zu lösen das immer die richtige Antwort eine der 4 auswahlen ist.">
+      <option name="closed" value="true" />
+      <created>1720803628345</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720803628345</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +296,18 @@
     <MESSAGE value="Das Bild wird nicht länger hard gecoded vom Pfad direkt abgefrufen, sondern ihm Dictionary. &#10;In der Dictionary habe ich alle Pfade und dazu jeweilige Bilder eingefügt, sodass man direkt über den Namen ein Bild hat." />
     <MESSAGE value="Nur Kommentare hinzugefügt" />
     <MESSAGE value="Die Bilder sind jetzt random und nicht mehr fest gecoded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Die Bilder sind jetzt random und nicht mehr fest gecoded" />
+    <MESSAGE value="Der Input wird von der Methode any_click (Die ich definitiv umbennen werde) erkannt. Jetzt kann ich anfang zu prüfen ob die wahl die richtige ist zum Bild. Villeicht fange ich vorher an das Problem zu lösen das immer die richtige Antwort eine der 4 auswahlen ist." />
+    <option name="LAST_COMMIT_MESSAGE" value="Der Input wird von der Methode any_click (Die ich definitiv umbennen werde) erkannt. Jetzt kann ich anfang zu prüfen ob die wahl die richtige ist zum Bild. Villeicht fange ich vorher an das Problem zu lösen das immer die richtige Antwort eine der 4 auswahlen ist." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

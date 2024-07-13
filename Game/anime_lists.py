@@ -3,4 +3,5 @@ anime_dictionarie = {
     "Megumin": "./Game/Bilder/megumin.jpg",
     "Emma": "./Game/Bilder/nacken_tatto.png",
     "Gojo": "./Game/Bilder/hollow.jpg",
+    "Roxy": "./Game/Bilder/roxy.jpg"
 }

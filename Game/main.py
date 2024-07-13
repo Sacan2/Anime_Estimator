@@ -11,17 +11,21 @@ image_groeße = image.resize((250, 200))
 python_bild = ImageTk.PhotoImage(image_groeße)
 tk.Label(image=python_bild).place(x=120, y=0)
 
+liste_für_überprüfung = []
+
+
+def knopf_druck(gewählter_name):
+    print(gewählter_name)
+
 
 def get_anime_name():
-    character_number_length_list = len(anime_lists.anime_dictionarie)
-    random_character_number = random.randrange(0, character_number_length_list)
-    character_name = list(anime_lists.anime_dictionarie.keys())[random_character_number]
-    anime_lists.anime_dictionarie.pop(character_name, None)
-    return character_name
-
-
-def any_click(gewählter_name):
-    print(gewählter_name)
+    while True:
+        character_number_length_list = len(anime_lists.anime_dictionarie)
+        random_character_number = random.randrange(0, character_number_length_list)
+        if random_character_number not in liste_für_überprüfung:
+            character_name = list(anime_lists.anime_dictionarie.keys())[random_character_number]
+            liste_für_überprüfung.append(random_character_number)
+            return character_name
 
 
 knopf_oben_links_name = get_anime_name()
@@ -29,10 +33,10 @@ knopf_oben_rechts_name = get_anime_name()
 knopf_unten_links_name = get_anime_name()
 knopf_unten_rechts_name = get_anime_name()
 
-knopf_oben_links = tk.Button(root, text=knopf_oben_links_name, command=lambda: any_click(knopf_oben_links_name))
-knopf_oben_rechts = tk.Button(root, text=knopf_oben_rechts_name, command=lambda: any_click(knopf_oben_rechts_name))
-knopf_unten_links = tk.Button(root, text=knopf_unten_links_name, command=lambda: any_click(knopf_unten_links_name))
-knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name, command=lambda: any_click(knopf_unten_rechts_name))
+knopf_oben_links = tk.Button(root, text=knopf_oben_links_name, command=lambda: knopf_druck(knopf_oben_links_name))
+knopf_oben_rechts = tk.Button(root, text=knopf_oben_rechts_name, command=lambda: knopf_druck(knopf_oben_rechts_name))
+knopf_unten_links = tk.Button(root, text=knopf_unten_links_name, command=lambda: knopf_druck(knopf_unten_links_name))
+knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name, command=lambda: knopf_druck(knopf_unten_rechts_name))
 
 knopf_oben_links.place(x=50, y=250, width=120, height=40)
 knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
