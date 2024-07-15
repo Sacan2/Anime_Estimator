@@ -1,3 +1,5 @@
+import os
+
 import anime_lists
 import random
 import tkinter as tk
@@ -14,7 +16,16 @@ tk.Label(image=python_bild).place(x=120, y=0)
 
 
 def knopf_druck(gewählter_name):
-    print(gewählter_name)
+    richtiger_name = list(anime_lists.anime_dictionarie)[random_Bild_index]
+    if gewählter_name == richtiger_name:
+        print("Richtige")
+        root.destroy()
+        refresh_window()
+
+
+def refresh_window():
+    # Process all pending events
+    root.update()
 
 
 def get_anime_name():
@@ -25,12 +36,10 @@ def get_anime_name():
         if random_Bild_index not in liste_für_überprüfung:
             liste_für_überprüfung.append(random_Bild_index)
             character_name = list(anime_lists.anime_dictionarie.keys())[random_Bild_index]
-            print(123)
             return character_name
         elif random_character_number not in liste_für_überprüfung:
             character_name = list(anime_lists.anime_dictionarie.keys())[random_character_number]
             liste_für_überprüfung.append(random_character_number)
-
             return character_name
 
 
@@ -38,8 +47,6 @@ get_anime_name()
 get_anime_name()
 get_anime_name()
 get_anime_name()
-
-print(liste_für_überprüfung)
 
 knopf_oben_links_name = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[0]]
 knopf_oben_rechts_name = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[1]]
