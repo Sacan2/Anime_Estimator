@@ -5,7 +5,11 @@ from PIL import Image, ImageTk
 
 #Fenster machen
 root = tk.Tk()
+
 liste_für_überprüfung = []
+button_liste = []
+abgleich_liste = []
+
 random_Bild_index = random.randrange(0, len(anime_lists.anime_dictionarie))
 image = Image.open(list(anime_lists.anime_dictionarie.values())[random_Bild_index])
 image_groeße = image.resize((250, 200))
@@ -47,23 +51,50 @@ knopf_unten_links = tk.Button(root, text=knopf_unten_links_name,
 knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name,
                                command=lambda: knopf_druck(knopf_unten_rechts_name, knopf_unten_rechts))
 
+button_liste.append(knopf_oben_links)
+button_liste.append(knopf_oben_rechts)
+button_liste.append(knopf_unten_links)
+button_liste.append(knopf_unten_rechts)
+
+abgleich_knopf_0 = knopf_oben_links.cget("text")
+abgleich_knopf_1 = knopf_oben_rechts.cget("text")
+abgleich_knopf_2 = knopf_unten_links.cget("text")
+abgleich_knopf_3 = knopf_unten_rechts.cget("text")
+
+abgleich_liste.append(abgleich_knopf_0)
+abgleich_liste.append(abgleich_knopf_1)
+abgleich_liste.append(abgleich_knopf_2)
+abgleich_liste.append(abgleich_knopf_3)
+
+kombiniete_liste = dict(zip(abgleich_liste, button_liste))
+print(kombiniete_liste)
+
 knopf_oben_links.place(x=50, y=250, width=120, height=40)
 knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
 knopf_unten_links.place(x=50, y=350, width=120, height=40)
 knopf_unten_rechts.place(x=300, y=350, width=120, height=40)
 
 
+def knopf_deaktieviren():
+    knopf_oben_links.configure(bg="red")
+    knopf_oben_links["state"] = "disabled"
+    knopf_oben_rechts.configure(bg="red")
+    knopf_oben_rechts["state"] = "disabled"
+    knopf_unten_links.configure(bg="red")
+    knopf_unten_links["state"] = "disabled"
+    knopf_unten_rechts.configure(bg="red")
+    knopf_unten_rechts["state"] = "disabled"
+
+
 def knopf_druck(gewählter_name, der_knopf):
     richtiger_name = list(anime_lists.anime_dictionarie)[random_Bild_index]
-    print(der_knopf)
 
     if gewählter_name == richtiger_name:
-        print("Richtige")
-        knopf_oben_links.configure(bg="red")
-        knopf_oben_rechts.configure(bg="red")
-        knopf_unten_links.configure(bg="red")
-        knopf_unten_rechts.configure(bg="red")
+        knopf_deaktieviren()
         der_knopf.configure(bg="green")
+    else:
+        knopf_deaktieviren()
+        kombiniete_liste[richtiger_name].configure(bg="green")
 
 
 window_width = 480
