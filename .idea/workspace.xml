@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Es werden überall in zufälligen Rheinfolgen die Namen plaziert eines ist immer richtig. der Richtige Name wird in die Liste liste_für_überprüfung = [] gepackt und mit einem random.shuffle werden alle Einträge in der Liste gemischt. die Methode get_anime_name() wird 4 mal aufgerufen damit die Liste gefüllt wird.">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Es wird geprüft ob der gewählte Charackter der richtige ist.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/main.py" afterDir="false" />
     </list>
@@ -280,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721036055810</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Es wird geprüft ob der gewählte Charackter der richtige ist.">
+      <option name="closed" value="true" />
+      <created>1721074658320</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721074658320</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,7 +321,8 @@
     <MESSAGE value="Der Input wird von der Methode any_click (Die ich definitiv umbennen werde) erkannt. Jetzt kann ich anfang zu prüfen ob die wahl die richtige ist zum Bild. Villeicht fange ich vorher an das Problem zu lösen das immer die richtige Antwort eine der 4 auswahlen ist." />
     <MESSAGE value="Es werden nur noch Namen einmal ausgegeben. Grund dafür ist, weil ich not is anstatt not in verwendet habe. not is prüft nur lediglich ob ein Wert nicht vorhanden ist. Sobald der Wert nicht da ist gibt es einen True zurück, weshalb auch die Namen sich dupliziert haben, weil es immer alles als richtig ansah. Stattdessen wird erstmal geprüft ob sich der Name mit not in bereits in der Liste befindet sobald es tut gibt es ein False zurück." />
     <MESSAGE value="Es werden überall in zufälligen Rheinfolgen die Namen plaziert eines ist immer richtig. der Richtige Name wird in die Liste liste_für_überprüfung = [] gepackt und mit einem random.shuffle werden alle Einträge in der Liste gemischt. die Methode get_anime_name() wird 4 mal aufgerufen damit die Liste gefüllt wird." />
-    <option name="LAST_COMMIT_MESSAGE" value="Es werden überall in zufälligen Rheinfolgen die Namen plaziert eines ist immer richtig. der Richtige Name wird in die Liste liste_für_überprüfung = [] gepackt und mit einem random.shuffle werden alle Einträge in der Liste gemischt. die Methode get_anime_name() wird 4 mal aufgerufen damit die Liste gefüllt wird." />
+    <MESSAGE value="Es wird geprüft ob der gewählte Charackter der richtige ist." />
+    <option name="LAST_COMMIT_MESSAGE" value="Es wird geprüft ob der gewählte Charackter der richtige ist." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

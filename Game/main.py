@@ -1,5 +1,3 @@
-import os
-
 import anime_lists
 import random
 import tkinter as tk
@@ -13,19 +11,6 @@ image = Image.open(list(anime_lists.anime_dictionarie.values())[random_Bild_inde
 image_groeße = image.resize((250, 200))
 python_bild = ImageTk.PhotoImage(image_groeße)
 tk.Label(image=python_bild).place(x=120, y=0)
-
-
-def knopf_druck(gewählter_name):
-    richtiger_name = list(anime_lists.anime_dictionarie)[random_Bild_index]
-    if gewählter_name == richtiger_name:
-        print("Richtige")
-        root.destroy()
-        refresh_window()
-
-
-def refresh_window():
-    # Process all pending events
-    root.update()
 
 
 def get_anime_name():
@@ -53,15 +38,33 @@ knopf_oben_rechts_name = list(anime_lists.anime_dictionarie)[liste_für_überpr�
 knopf_unten_links_name = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[2]]
 knopf_unten_rechts_name = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[3]]
 
-knopf_oben_links = tk.Button(root, text=knopf_oben_links_name, command=lambda: knopf_druck(knopf_oben_links_name))
-knopf_oben_rechts = tk.Button(root, text=knopf_oben_rechts_name, command=lambda: knopf_druck(knopf_oben_rechts_name))
-knopf_unten_links = tk.Button(root, text=knopf_unten_links_name, command=lambda: knopf_druck(knopf_unten_links_name))
-knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name, command=lambda: knopf_druck(knopf_unten_rechts_name))
+knopf_oben_links = tk.Button(root, text=knopf_oben_links_name,
+                             command=lambda: knopf_druck(knopf_oben_links_name, knopf_oben_links))
+knopf_oben_rechts = tk.Button(root, text=knopf_oben_rechts_name,
+                              command=lambda: knopf_druck(knopf_oben_rechts_name, knopf_oben_rechts))
+knopf_unten_links = tk.Button(root, text=knopf_unten_links_name,
+                              command=lambda: knopf_druck(knopf_unten_links_name, knopf_unten_links))
+knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name,
+                               command=lambda: knopf_druck(knopf_unten_rechts_name, knopf_unten_rechts))
 
 knopf_oben_links.place(x=50, y=250, width=120, height=40)
 knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
 knopf_unten_links.place(x=50, y=350, width=120, height=40)
 knopf_unten_rechts.place(x=300, y=350, width=120, height=40)
+
+
+def knopf_druck(gewählter_name, der_knopf):
+    richtiger_name = list(anime_lists.anime_dictionarie)[random_Bild_index]
+    print(der_knopf)
+
+    if gewählter_name == richtiger_name:
+        print("Richtige")
+        knopf_oben_links.configure(bg="red")
+        knopf_oben_rechts.configure(bg="red")
+        knopf_unten_links.configure(bg="red")
+        knopf_unten_rechts.configure(bg="red")
+        der_knopf.configure(bg="green")
+
 
 window_width = 480
 window_height = 500
