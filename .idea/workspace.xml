@@ -49,19 +49,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.anime_lists.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/serha/PycharmProject/Anime_Estimator&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.anime_lists.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/serha/PycharmProject/Anime_Estimator",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Game\Bilder" />
@@ -296,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721136656455</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Es wird nach einem versuch jeder Knopf deaktiviert und der User bekommt nochmal gezeigt welcher der richtige Name ist.">
+      <option name="closed" value="true" />
+      <created>1721164764434</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1721164764434</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,7 +339,8 @@
     <MESSAGE value="Es werden überall in zufälligen Rheinfolgen die Namen plaziert eines ist immer richtig. der Richtige Name wird in die Liste liste_für_überprüfung = [] gepackt und mit einem random.shuffle werden alle Einträge in der Liste gemischt. die Methode get_anime_name() wird 4 mal aufgerufen damit die Liste gefüllt wird." />
     <MESSAGE value="Es wird geprüft ob der gewählte Charackter der richtige ist." />
     <MESSAGE value="Nachdem der richtige Namen ausgewählt worden ist wird dieser angezeigt ob man den richitgen ausgewählt hat. Es wird zurzeit alles auf rot und das richtige dann auf grün gemacht ist nicht sauber aber es tut den Job." />
-    <option name="LAST_COMMIT_MESSAGE" value="Nachdem der richtige Namen ausgewählt worden ist wird dieser angezeigt ob man den richitgen ausgewählt hat. Es wird zurzeit alles auf rot und das richtige dann auf grün gemacht ist nicht sauber aber es tut den Job." />
+    <MESSAGE value="Es wird nach einem versuch jeder Knopf deaktiviert und der User bekommt nochmal gezeigt welcher der richtige Name ist." />
+    <option name="LAST_COMMIT_MESSAGE" value="Es wird nach einem versuch jeder Knopf deaktiviert und der User bekommt nochmal gezeigt welcher der richtige Name ist." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

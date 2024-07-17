@@ -14,7 +14,8 @@ random_Bild_index = random.randrange(0, len(anime_lists.anime_dictionarie))
 image = Image.open(list(anime_lists.anime_dictionarie.values())[random_Bild_index])
 image_groeße = image.resize((250, 200))
 python_bild = ImageTk.PhotoImage(image_groeße)
-tk.Label(image=python_bild).place(x=120, y=0)
+label = tk.Label(image=python_bild)
+label.place(x=120, y=0)
 
 
 def get_anime_name():
@@ -51,6 +52,23 @@ knopf_unten_links = tk.Button(root, text=knopf_unten_links_name,
 knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name,
                                command=lambda: knopf_druck(knopf_unten_rechts_name, knopf_unten_rechts))
 
+nächste_runde_knopf = tk.Button(root, text="Nächste Runde", command=lambda: nächste_runde_vom_spiel())
+
+
+def nächste_runde_vom_spiel():
+    neues_Bild_index = random.randrange(0, len(anime_lists.anime_dictionarie))
+    bild_vom_charackter = Image.open(list(anime_lists.anime_dictionarie.values())[neues_Bild_index])
+    character_bild_groeße = bild_vom_charackter.resize((250, 200))
+    verarbeitetes_bild = ImageTk.PhotoImage(character_bild_groeße)
+    label.config(image=verarbeitetes_bild)
+    label.image = verarbeitetes_bild
+    nächste_runde_knopf.destroy()
+
+
+def next_round_knopf():
+    nächste_runde_knopf.place(x=180, y=410, width=120, height=40)
+
+
 button_liste.append(knopf_oben_links)
 button_liste.append(knopf_oben_rechts)
 button_liste.append(knopf_unten_links)
@@ -66,8 +84,7 @@ abgleich_liste.append(abgleich_knopf_1)
 abgleich_liste.append(abgleich_knopf_2)
 abgleich_liste.append(abgleich_knopf_3)
 
-kombiniete_liste = dict(zip(abgleich_liste, button_liste))
-print(kombiniete_liste)
+kombinierte_liste = dict(zip(abgleich_liste, button_liste))
 
 knopf_oben_links.place(x=50, y=250, width=120, height=40)
 knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
@@ -88,13 +105,13 @@ def knopf_deaktieviren():
 
 def knopf_druck(gewählter_name, der_knopf):
     richtiger_name = list(anime_lists.anime_dictionarie)[random_Bild_index]
-
+    next_round_knopf()
     if gewählter_name == richtiger_name:
         knopf_deaktieviren()
         der_knopf.configure(bg="green")
     else:
         knopf_deaktieviren()
-        kombiniete_liste[richtiger_name].configure(bg="green")
+        kombinierte_liste[richtiger_name].configure(bg="green")
 
 
 window_width = 480
