@@ -103,6 +103,10 @@ def knopf_deaktieviren():
     knopf_unten_rechts["state"] = "disabled"
 
 
+def knopf_aktievieren():
+    print("123123")
+
+
 def knopf_druck(gewählter_name, der_knopf):
     richtiger_name = list(anime_lists.anime_dictionarie)[random_Bild_index]
     next_round_knopf()
