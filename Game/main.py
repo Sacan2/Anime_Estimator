@@ -65,13 +65,9 @@ def nächste_runde_vom_spiel():
     label.config(image=verarbeitetes_bild)
     label.image = verarbeitetes_bild
     liste_für_überprüfung.clear()
-    get_anime_name()
-    get_anime_name()
-    get_anime_name()
-    get_anime_name()
-
-    nächste_runde_knopf.destroy()
     knopf_aktievieren()
+    nächste_runde_knopf.pack_forget()
+    print(button_liste)
 
 
 def next_round_knopf():
@@ -113,8 +109,8 @@ def knopf_deaktieviren():
 
 
 def knopf_aktievieren():
-    text_verloren.destroy()
-    text_gewonnen.destroy()
+    text_verloren.pack_forget()
+    text_gewonnen.pack_forget()
     knopf_oben_links.configure(bg="SystemButtonFace")
     knopf_oben_links["state"] = "active"
     knopf_oben_rechts.configure(bg="SystemButtonFace")
@@ -129,7 +125,7 @@ def knopf_druck(gewählter_name, der_knopf):
     richtiger_name = list(anime_lists.anime_dictionarie)[random_Bild_index]
     next_round_knopf()
     if gewählter_name == richtiger_name:
-        text_gewonnen.place(x=170, y=300)
+        text_gewonnen.place(x=210, y=300)
         knopf_deaktieviren()
         der_knopf.configure(bg="green")
     else:
@@ -152,4 +148,5 @@ center_y = int(screen_height / 2 - window_height / 2)
 # set the position of the window to the center of the screen ##### habe ich net geschrieben
 root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 root.title('Philipps Game')
+print(liste_für_überprüfung)
 root.mainloop()
