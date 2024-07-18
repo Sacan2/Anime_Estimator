@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Es wird ein Knopf erstellt der sobald dieser gedrückt wird das Bild verändert und dazu wird der Knopf für das Rerollen wird entfernt.">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Nur eine Methode berreits gestellt damit man die Knöpfe wieder aktivieren kann.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721239214321</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Nur eine Methode berreits gestellt damit man die Knöpfe wieder aktivieren kann.">
+      <option name="closed" value="true" />
+      <created>1721251863293</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721251863293</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,7 +357,8 @@
     <MESSAGE value="Nachdem der richtige Namen ausgewählt worden ist wird dieser angezeigt ob man den richitgen ausgewählt hat. Es wird zurzeit alles auf rot und das richtige dann auf grün gemacht ist nicht sauber aber es tut den Job." />
     <MESSAGE value="Es wird nach einem versuch jeder Knopf deaktiviert und der User bekommt nochmal gezeigt welcher der richtige Name ist." />
     <MESSAGE value="Es wird ein Knopf erstellt der sobald dieser gedrückt wird das Bild verändert und dazu wird der Knopf für das Rerollen wird entfernt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Es wird ein Knopf erstellt der sobald dieser gedrückt wird das Bild verändert und dazu wird der Knopf für das Rerollen wird entfernt." />
+    <MESSAGE value="Nur eine Methode berreits gestellt damit man die Knöpfe wieder aktivieren kann." />
+    <option name="LAST_COMMIT_MESSAGE" value="Nur eine Methode berreits gestellt damit man die Knöpfe wieder aktivieren kann." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

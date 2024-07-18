@@ -53,6 +53,8 @@ knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name,
                                command=lambda: knopf_druck(knopf_unten_rechts_name, knopf_unten_rechts))
 
 nächste_runde_knopf = tk.Button(root, text="Nächste Runde", command=lambda: nächste_runde_vom_spiel())
+text_gewonnen = tk.Label(root, text="richtig")
+text_verloren = tk.Label(root, text="Du hast es verkackt")
 
 
 def nächste_runde_vom_spiel():
@@ -62,7 +64,14 @@ def nächste_runde_vom_spiel():
     verarbeitetes_bild = ImageTk.PhotoImage(character_bild_groeße)
     label.config(image=verarbeitetes_bild)
     label.image = verarbeitetes_bild
+    liste_für_überprüfung.clear()
+    get_anime_name()
+    get_anime_name()
+    get_anime_name()
+    get_anime_name()
+
     nächste_runde_knopf.destroy()
+    knopf_aktievieren()
 
 
 def next_round_knopf():
@@ -104,16 +113,27 @@ def knopf_deaktieviren():
 
 
 def knopf_aktievieren():
-    print("123123")
+    text_verloren.destroy()
+    text_gewonnen.destroy()
+    knopf_oben_links.configure(bg="SystemButtonFace")
+    knopf_oben_links["state"] = "active"
+    knopf_oben_rechts.configure(bg="SystemButtonFace")
+    knopf_oben_rechts["state"] = "active"
+    knopf_unten_links.configure(bg="SystemButtonFace")
+    knopf_unten_links["state"] = "active"
+    knopf_unten_rechts.configure(bg="SystemButtonFace")
+    knopf_unten_rechts["state"] = "active"
 
 
 def knopf_druck(gewählter_name, der_knopf):
     richtiger_name = list(anime_lists.anime_dictionarie)[random_Bild_index]
     next_round_knopf()
     if gewählter_name == richtiger_name:
+        text_gewonnen.place(x=170, y=300)
         knopf_deaktieviren()
         der_knopf.configure(bg="green")
     else:
+        text_verloren.place(x=180, y=300)
         knopf_deaktieviren()
         kombinierte_liste[richtiger_name].configure(bg="green")
 
