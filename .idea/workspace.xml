@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Die Texte ob man verloren hat oder gewonnen zeigen sich nur noch als Ergebnis.">
       <change beforePath="$PROJECT_DIR$/Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -345,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721427051552</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Die Texte ob man verloren hat oder gewonnen zeigen sich nur noch als Ergebnis.">
+      <option name="closed" value="true" />
+      <created>1721512421063</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1721512421063</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,7 +368,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="First Commit" />
     <MESSAGE value="Second Commit&#10;nothing much just some first tries. Need to find a solution for the check that the user_input and selected_random_ability are correct." />
     <MESSAGE value="Muss find a better way for this&#10;Deprission is hitting" />
     <MESSAGE value="Der erste Meilenstein wurde erreicht,&#10;es gibt ein Spiel, dass den Spieler fragt welche Fähigkeit zu welchem Charakter gehört. Diese Charaktere werden dem Spieler vorgegeben. Sein Input wird  getestet ob seine Angegebene Antwort exestiert oder nicht. Ich muss noch eine Lösung finden, damit ich keinen Unendlich langen if und elif habe villeicht am besten mit switch case also == match case in Python." />
@@ -386,7 +392,8 @@
     <MESSAGE value="Die Runde kann beendet werden und alle Knöpfe aktivieren sich aber es müssen sich noch alle Knöpfe umbenennen." />
     <MESSAGE value="Problem gelöst die Widgets dürfen nicht zerstört werden. Sobald ein Widget zerstört wird sorgt es dafür, dass es nicht länger existiert also muss es versteckt werden und anschließend wieder gezeigt werden also quasi ein Vorhang auf und zu ziehen." />
     <MESSAGE value="Das Spiel funktioniert endlich es wird selbst bei wiederholten versuchen funktionieren. Es musste viel angepasst werden jetzt verstehe ich wieso das arbeiten mit Methoden und Funktionen wichtig ist." />
-    <option name="LAST_COMMIT_MESSAGE" value="Das Spiel funktioniert endlich es wird selbst bei wiederholten versuchen funktionieren. Es musste viel angepasst werden jetzt verstehe ich wieso das arbeiten mit Methoden und Funktionen wichtig ist." />
+    <MESSAGE value="Die Texte ob man verloren hat oder gewonnen zeigen sich nur noch als Ergebnis." />
+    <option name="LAST_COMMIT_MESSAGE" value="Die Texte ob man verloren hat oder gewonnen zeigen sich nur noch als Ergebnis." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

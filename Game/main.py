@@ -62,6 +62,7 @@ def nächste_runde_vom_spiel():
 
     text_verloren.place(x=700, y=300)
     text_gewonnen.place(x=700, y=300)
+    nächste_runde_knopf.place(x=700, y=410, width=120, height=40)
 
 
 def next_round_knopf():
