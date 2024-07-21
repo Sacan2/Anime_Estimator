@@ -23,6 +23,10 @@ def get_anime_name(liste_für_überprüfung_parameter, bild_index):
 
 
 def nächste_runde_vom_spiel():
+    print(len(anime_lists.anime_dictionarie))
+    if len(anime_lists.anime_dictionarie) <= 4:
+        root.quit()
+
     random_Bild_index_neu = random.randrange(0, len(anime_lists.anime_dictionarie))
     bild_vom_charackter = Image.open(list(anime_lists.anime_dictionarie.values())[random_Bild_index_neu])
     character_bild_groeße = bild_vom_charackter.resize((250, 200))
@@ -115,11 +119,13 @@ def knopf_druck(gewählter_name, der_knopf, bild_index):
     richtiger_name = list(anime_lists.anime_dictionarie)[bild_index]
     next_round_knopf()
     if gewählter_name == richtiger_name:
+        anime_lists.anime_dictionarie.pop(richtiger_name)
         text_gewonnen.place(x=210, y=300)
         knopf_deaktieviren()
         der_knopf.configure(bg="green")
 
     else:
+        anime_lists.anime_dictionarie.pop(richtiger_name)
         text_verloren.place(x=180, y=300)
         knopf_deaktieviren()
         kombinierte_liste = kombiniere_liste()
@@ -129,6 +135,7 @@ def knopf_druck(gewählter_name, der_knopf, bild_index):
 liste_für_überprüfung = []
 button_liste = []
 abgleich_liste = []
+
 random_Bild_index = random.randrange(0, len(anime_lists.anime_dictionarie))
 image = Image.open(list(anime_lists.anime_dictionarie.values())[random_Bild_index])
 image_groeße = image.resize((250, 200))
