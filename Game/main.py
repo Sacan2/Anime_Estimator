@@ -23,13 +23,12 @@ def get_anime_name(liste_für_überprüfung_parameter, bild_index):
 
 
 def nächste_runde_vom_spiel():
-    print(len(anime_lists.anime_dictionarie))
     if len(anime_lists.anime_dictionarie) <= 4:
         root.quit()
 
     random_Bild_index_neu = random.randrange(0, len(anime_lists.anime_dictionarie))
     bild_vom_charackter = Image.open(list(anime_lists.anime_dictionarie.values())[random_Bild_index_neu])
-    character_bild_groeße = bild_vom_charackter.resize((250, 200))
+    character_bild_groeße = bild_vom_charackter.resize((180, 200))
     verarbeitetes_bild = ImageTk.PhotoImage(character_bild_groeße)
     label.config(image=verarbeitetes_bild)
     label.image = verarbeitetes_bild
@@ -138,10 +137,10 @@ abgleich_liste = []
 
 random_Bild_index = random.randrange(0, len(anime_lists.anime_dictionarie))
 image = Image.open(list(anime_lists.anime_dictionarie.values())[random_Bild_index])
-image_groeße = image.resize((250, 200))
+image_groeße = image.resize((180, 200))
 python_bild = ImageTk.PhotoImage(image_groeße)
 label = tk.Label(image=python_bild)
-label.place(x=120, y=0)
+label.place(x=150, y=0)
 
 get_anime_name(liste_für_überprüfung, random_Bild_index)
 get_anime_name(liste_für_überprüfung, random_Bild_index)
