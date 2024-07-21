@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Keine Dopplungen mehr es werden nur noch Bilder hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Annie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Giyuu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Gouhin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Griffith.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Guts.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Hange.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Haru.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Maine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Mephisto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Rebecca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Bilder/Shirou.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/anime_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/anime_lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Das Spiel ist fertig ich werde noch ein paar Personene hinzufügen." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -381,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721596153397</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Das Spiel ist fertig ich werde noch ein paar Personene hinzufügen.">
+      <option name="closed" value="true" />
+      <created>1721596975475</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1721596975475</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,7 +390,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Der erste Meilenstein wurde erreicht,&#10;es gibt ein Spiel, dass den Spieler fragt welche Fähigkeit zu welchem Charakter gehört. Diese Charaktere werden dem Spieler vorgegeben. Sein Input wird  getestet ob seine Angegebene Antwort exestiert oder nicht. Ich muss noch eine Lösung finden, damit ich keinen Unendlich langen if und elif habe villeicht am besten mit switch case also == match case in Python." />
     <MESSAGE value="Verbesserte alternative für if else statement.&#10;Ich verwende ein match case. Die case _ ist der default Wert also sobald kein Wert mit den anderen übereinstimmt kommt automatisch dieser Wert benutzt. Jetzt muss ich in der Lage sein mehrere Fähigkeiten zu nehemn und verschiedene Namen und ein Name muss richtig sein." />
     <MESSAGE value="Dictionary wurde durch ein Array ersetzt.&#10;Ich habe Dictory benutzt, um die Namen zu speichern. Habe dafür das Array entfernt." />
     <MESSAGE value="Ich habe nur vier weitere random Charaktere hinzugefügt.&#10;Eine Methode erstellen die, sobald ein random Charakter ausgewählt wird, dieser für die anderen nciht mehr zu verfügung stehen." />
@@ -422,7 +414,8 @@
     <MESSAGE value="Die Texte ob man verloren hat oder gewonnen zeigen sich nur noch als Ergebnis." />
     <MESSAGE value="Der näschste Runde Knopf wird auch nur dann angezeigt wenn er auch da sein soll." />
     <MESSAGE value="Keine Dopplungen mehr es werden nur noch Bilder hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Keine Dopplungen mehr es werden nur noch Bilder hinzugefügt" />
+    <MESSAGE value="Das Spiel ist fertig ich werde noch ein paar Personene hinzufügen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Das Spiel ist fertig ich werde noch ein paar Personene hinzufügen." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

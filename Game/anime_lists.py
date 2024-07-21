@@ -30,5 +30,8 @@ anime_dictionarie = {
     "Thorkell": "./Game/Bilder/Thorkell.jpg",
     "Thors": "./Game/Bilder/Thors.jpg",
     "Matsuboshi": "./Game/Bilder/Matsuboshi.jpg",
+    "Yuu": "./Game/Bilder/Yuu.jpg",
+    "Matsuboshi": "./Game/Bilder/Matsuboshi.jpg",
+    "Chika": "./Game/Bilder/Chika.jpg",
 
 }
