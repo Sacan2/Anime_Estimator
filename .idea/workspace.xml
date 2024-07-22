@@ -4,7 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Das Spiel ist fertig ich werde noch ein paar Personene hinzufügen." />
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Fertig.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Annie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Annie.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Catherine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Catherine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Chika.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Chika.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Edward.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Edward.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Giyuu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Giyuu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Gojo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Gojo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Gouhin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Gouhin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Griffith.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Griffith.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Guts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Guts.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Hange.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Hange.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Haru.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Haru.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Hiromi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Hiromi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Kaede.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Kaede.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Kayo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Kayo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Maine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Maine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Matsuboshi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Matsuboshi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Mephisto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Mephisto.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Nina.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Nina.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Rebecca.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Rebecca.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Reina.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Reina.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Rikka.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Rikka.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Sanemi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Sanemi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Shirou.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Shirou.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Tadaomi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Tadaomi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Thorkell.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Thorkell.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Thors.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Thors.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Yui.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Yui.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Yuu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Yuu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/Yuuta.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/Yuuta.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/denji.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/denji.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/megumin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/megumin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/nacken_tatto.png" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/nacken_tatto.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Bilder/roxy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder/roxy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/anime_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/anime_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/Analysis-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/EXE-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/PKG-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/PYZ-00.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/PYZ-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/main.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/warn-main.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main/xref-main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.spec" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,9 +109,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Game\Bilder" />
-      <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Game" />
       <recent name="C:\Users\serha\PycharmProject\Anime_Estimator" />
+      <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Game" />
+      <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Game\Bilder" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -81,7 +128,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\serha\PycharmProject\Anime_Estimator\Game\anime_lists.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\serha\PycharmProject\Anime_Estimator\anime_lists.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,7 +150,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\serha\PycharmProject\Anime_Estimator\Game\main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\serha\PycharmProject\Anime_Estimator\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
