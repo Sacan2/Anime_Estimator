@@ -3,7 +3,11 @@ import sys
 import random
 import tkinter as tk
 from PIL import Image, ImageTk
-import anime_lists  # Stellen Sie sicher, dass `anime_lists` im selben Verzeichnis wie `main.py` vorhanden ist
+import anime_lists
+
+richtige_antworten = 0
+falsche_antworten = 0
+
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
@@ -14,8 +18,10 @@ def resource_path(relative_path):
 
     return os.path.join(base_path, relative_path)
 
+
 # Fenster erstellen
 root = tk.Tk()
+
 
 def get_anime_name(liste_für_überprüfung_parameter, bild_index):
     random.shuffle(liste_für_überprüfung_parameter)
@@ -31,6 +37,7 @@ def get_anime_name(liste_für_überprüfung_parameter, bild_index):
             liste_für_überprüfung_parameter.append(random_character_number)
             return character_name
 
+
 def nächste_runde_vom_spiel():
     if len(anime_lists.anime_dictionarie) <= 4:
         root.quit()
@@ -39,8 +46,8 @@ def nächste_runde_vom_spiel():
     bild_vom_charackter = Image.open(resource_path(list(anime_lists.anime_dictionarie.values())[random_Bild_index_neu]))
     character_bild_groeße = bild_vom_charackter.resize((180, 200))
     verarbeitetes_bild = ImageTk.PhotoImage(character_bild_groeße)
-    label.config(image=verarbeitetes_bild)
-    label.image = verarbeitetes_bild
+    bild_zum_label.config(image=verarbeitetes_bild)
+    bild_zum_label.image = verarbeitetes_bild
     liste_für_überprüfung.clear()
     button_liste.clear()
     abgleich_liste.clear()
@@ -72,12 +79,17 @@ def nächste_runde_vom_spiel():
 
     kombinierte_liste = kombiniere_liste()
 
+    print(richtige_antworten)
+    print(falsche_antworten)
+
     text_verloren.place(x=700, y=300)
     text_gewonnen.place(x=700, y=300)
     nächste_runde_knopf.place(x=700, y=410, width=120, height=40)
 
-def next_round_knopf():
+
+def knöpf_für_die_nächste_runde():
     nächste_runde_knopf.place(x=180, y=410, width=120, height=40)
+
 
 def knopf_deaktieviren():
     knopf_oben_links.configure(bg="red")
@@ -89,6 +101,7 @@ def knopf_deaktieviren():
     knopf_unten_rechts.configure(bg="red")
     knopf_unten_rechts["state"] = "disabled"
 
+
 def knopf_aktievieren():
     knopf_oben_links.configure(bg="SystemButtonFace")
     knopf_oben_links["state"] = "active"
@@ -98,6 +111,7 @@ def knopf_aktievieren():
     knopf_unten_links["state"] = "active"
     knopf_unten_rechts.configure(bg="SystemButtonFace")
     knopf_unten_rechts["state"] = "active"
+
 
 def kombiniere_liste():
     button_liste.append(knopf_oben_links)
@@ -118,31 +132,35 @@ def kombiniere_liste():
     kombinierte_liste = dict(zip(abgleich_liste, button_liste))
     return kombinierte_liste
 
+
 def knopf_druck(gewählter_name, der_knopf, bild_index):
+    global richtige_antworten, falsche_antworten
     richtiger_name = list(anime_lists.anime_dictionarie)[bild_index]
-    next_round_knopf()
+    knöpf_für_die_nächste_runde()
     if gewählter_name == richtiger_name:
+        richtige_antworten += 1
         anime_lists.anime_dictionarie.pop(richtiger_name)
         text_gewonnen.place(x=210, y=300)
         knopf_deaktieviren()
         der_knopf.configure(bg="green")
     else:
+        falsche_antworten += 1
         anime_lists.anime_dictionarie.pop(richtiger_name)
         text_verloren.place(x=180, y=300)
         knopf_deaktieviren()
         kombinierte_liste = kombiniere_liste()
         kombinierte_liste[richtiger_name].configure(bg="green")
 
+
 liste_für_überprüfung = []
 button_liste = []
 abgleich_liste = []
 
 random_Bild_index = random.randrange(0, len(anime_lists.anime_dictionarie))
-image = Image.open(resource_path(list(anime_lists.anime_dictionarie.values())[random_Bild_index]))
-image_groeße = image.resize((180, 200))
-python_bild = ImageTk.PhotoImage(image_groeße)
-label = tk.Label(image=python_bild)
-label.place(x=150, y=0)
+bild_roh_unverabreitet = Image.open(resource_path(list(anime_lists.anime_dictionarie.values())[random_Bild_index]))
+bild_größe_setzen = bild_roh_unverabreitet.resize((180, 200))
+bild_auslesen = ImageTk.PhotoImage(bild_größe_setzen)
+bild_zum_label = tk.Label(image=bild_auslesen)
 
 get_anime_name(liste_für_überprüfung, random_Bild_index)
 get_anime_name(liste_für_überprüfung, random_Bild_index)
@@ -161,19 +179,32 @@ knopf_oben_rechts = tk.Button(root, text=knopf_oben_rechts_name,
 knopf_unten_links = tk.Button(root, text=knopf_unten_links_name,
                               command=lambda: knopf_druck(knopf_unten_links_name, knopf_unten_links, random_Bild_index))
 knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name,
-                               command=lambda: knopf_druck(knopf_unten_rechts_name, knopf_unten_rechts, random_Bild_index))
+                               command=lambda: knopf_druck(knopf_unten_rechts_name, knopf_unten_rechts,
+                                                           random_Bild_index))
 
 nächste_runde_knopf = tk.Button(root, text="Nächste Runde", command=lambda: nächste_runde_vom_spiel())
 text_gewonnen = tk.Label(root, text="richtig")
 text_verloren = tk.Label(root, text="Du hast es verkackt")
 
-knopf_oben_links.place(x=50, y=250, width=120, height=40)
-knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
-knopf_unten_links.place(x=50, y=350, width=120, height=40)
-knopf_unten_rechts.place(x=300, y=350, width=120, height=40)
+
+def knöpfe_für_game_zeigen():
+    knopf_oben_links.place(x=50, y=250, width=120, height=40)
+    knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
+    knopf_unten_links.place(x=50, y=350, width=120, height=40)
+    knopf_unten_rechts.place(x=300, y=350, width=120, height=40)
+    bild_zum_label.place(x=150, y=0)
+    knopf_starte_game.destroy()
+
+
+knopf_starte_game = tk.Button(root, text='Start', command=lambda: knöpfe_für_game_zeigen())
+
+knopf_starte_game.place(x=170, y=150, width=120, height=60)
 
 window_width = 480
 window_height = 500
+
+#dark mode aber sieht hässlich aus
+#root.config(bg="#26242f")
 
 # get the screen dimension
 screen_width = root.winfo_screenwidth()
