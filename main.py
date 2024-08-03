@@ -8,6 +8,10 @@ import anime_lists
 richtige_antworten = 0
 falsche_antworten = 0
 
+kopie_dic_von_anime_bilder = anime_lists.anime_dictionarie
+
+print(kopie_dic_von_anime_bilder)
+
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
@@ -26,65 +30,69 @@ root = tk.Tk()
 def get_anime_name(liste_für_überprüfung_parameter, bild_index):
     random.shuffle(liste_für_überprüfung_parameter)
     while True:
-        character_number_length_list = len(anime_lists.anime_dictionarie)
+        character_number_length_list = len(kopie_dic_von_anime_bilder)
         random_character_number = random.randrange(0, character_number_length_list)
         if bild_index not in liste_für_überprüfung_parameter:
             liste_für_überprüfung_parameter.append(bild_index)
-            character_name = list(anime_lists.anime_dictionarie.keys())[bild_index]
+            character_name = list(kopie_dic_von_anime_bilder.keys())[bild_index]
             return character_name
         elif random_character_number not in liste_für_überprüfung_parameter:
-            character_name = list(anime_lists.anime_dictionarie.keys())[random_character_number]
+            character_name = list(kopie_dic_von_anime_bilder.keys())[random_character_number]
             liste_für_überprüfung_parameter.append(random_character_number)
             return character_name
 
 
 def nächste_runde_vom_spiel():
-    if len(anime_lists.anime_dictionarie) <= 4:
+    if not len(kopie_dic_von_anime_bilder) <= 4:
+        random_Bild_index_neu = random.randrange(0, len(kopie_dic_von_anime_bilder))
+        bild_vom_charackter = Image.open(
+            resource_path(list(kopie_dic_von_anime_bilder.values())[random_Bild_index_neu]))
+        character_bild_groeße = bild_vom_charackter.resize((180, 200))
+        verarbeitetes_bild = ImageTk.PhotoImage(character_bild_groeße)
+        bild_zum_label.config(image=verarbeitetes_bild)
+        bild_zum_label.image = verarbeitetes_bild
+        liste_für_überprüfung.clear()
+        button_liste.clear()
+        abgleich_liste.clear()
+
+        knopf_aktievieren()
+
+        get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
+        get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
+        get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
+        get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
+
+        knopf_oben_links_name_neue_runde = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[0]]
+        knopf_oben_rechts_name_neue_runde = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[1]]
+        knopf_unten_links_name_neue_runde = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[2]]
+        knopf_unten_rechts_name_neue_runde = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[3]]
+
+        knopf_oben_links.config(text=knopf_oben_links_name_neue_runde,
+                                command=lambda: knopf_druck(knopf_oben_links_name_neue_runde, knopf_oben_links,
+                                                            random_Bild_index_neu))
+        knopf_oben_rechts.config(text=knopf_oben_rechts_name_neue_runde,
+                                 command=lambda: knopf_druck(knopf_oben_rechts_name_neue_runde, knopf_oben_rechts,
+                                                             random_Bild_index_neu))
+        knopf_unten_links.config(text=knopf_unten_links_name_neue_runde,
+                                 command=lambda: knopf_druck(knopf_unten_links_name_neue_runde, knopf_unten_links,
+                                                             random_Bild_index_neu))
+        knopf_unten_rechts.config(text=knopf_unten_rechts_name_neue_runde,
+                                  command=lambda: knopf_druck(knopf_unten_rechts_name_neue_runde, knopf_unten_rechts,
+                                                              random_Bild_index_neu))
+
+        kombinierte_liste = kombiniere_liste()
+
+        text_verloren.place(x=700, y=300)
+        text_gewonnen.place(x=700, y=300)
+        nächste_runde_knopf.place(x=700, y=410, width=120, height=40)
+    else:
         root.quit()
+        print(kopie_dic_von_anime_bilder)
 
-    random_Bild_index_neu = random.randrange(0, len(anime_lists.anime_dictionarie))
-    bild_vom_charackter = Image.open(resource_path(list(anime_lists.anime_dictionarie.values())[random_Bild_index_neu]))
-    character_bild_groeße = bild_vom_charackter.resize((180, 200))
-    verarbeitetes_bild = ImageTk.PhotoImage(character_bild_groeße)
-    bild_zum_label.config(image=verarbeitetes_bild)
-    bild_zum_label.image = verarbeitetes_bild
-    liste_für_überprüfung.clear()
-    button_liste.clear()
-    abgleich_liste.clear()
 
-    knopf_aktievieren()
-
-    get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
-    get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
-    get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
-    get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
-
-    knopf_oben_links_name_neue_runde = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[0]]
-    knopf_oben_rechts_name_neue_runde = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[1]]
-    knopf_unten_links_name_neue_runde = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[2]]
-    knopf_unten_rechts_name_neue_runde = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[3]]
-
-    knopf_oben_links.config(text=knopf_oben_links_name_neue_runde,
-                            command=lambda: knopf_druck(knopf_oben_links_name_neue_runde, knopf_oben_links,
-                                                        random_Bild_index_neu))
-    knopf_oben_rechts.config(text=knopf_oben_rechts_name_neue_runde,
-                             command=lambda: knopf_druck(knopf_oben_rechts_name_neue_runde, knopf_oben_rechts,
-                                                         random_Bild_index_neu))
-    knopf_unten_links.config(text=knopf_unten_links_name_neue_runde,
-                             command=lambda: knopf_druck(knopf_unten_links_name_neue_runde, knopf_unten_links,
-                                                         random_Bild_index_neu))
-    knopf_unten_rechts.config(text=knopf_unten_rechts_name_neue_runde,
-                              command=lambda: knopf_druck(knopf_unten_rechts_name_neue_runde, knopf_unten_rechts,
-                                                          random_Bild_index_neu))
-
-    kombinierte_liste = kombiniere_liste()
-
-    print(richtige_antworten)
-    print(falsche_antworten)
-
-    text_verloren.place(x=700, y=300)
-    text_gewonnen.place(x=700, y=300)
-    nächste_runde_knopf.place(x=700, y=410, width=120, height=40)
+def spiel_zu_ende():
+    spiel_gewonnen_text = tk.Label(root, text=f"Du hast {richtige_antworten} richtig geantwortet")
+    spiel_gewonnen_text.place(x=170, y=300)
 
 
 def knöpf_für_die_nächste_runde():
@@ -135,17 +143,17 @@ def kombiniere_liste():
 
 def knopf_druck(gewählter_name, der_knopf, bild_index):
     global richtige_antworten, falsche_antworten
-    richtiger_name = list(anime_lists.anime_dictionarie)[bild_index]
+    richtiger_name = list(kopie_dic_von_anime_bilder)[bild_index]
     knöpf_für_die_nächste_runde()
     if gewählter_name == richtiger_name:
         richtige_antworten += 1
-        anime_lists.anime_dictionarie.pop(richtiger_name)
+        kopie_dic_von_anime_bilder.pop(richtiger_name)
         text_gewonnen.place(x=210, y=300)
         knopf_deaktieviren()
         der_knopf.configure(bg="green")
     else:
         falsche_antworten += 1
-        anime_lists.anime_dictionarie.pop(richtiger_name)
+        kopie_dic_von_anime_bilder.pop(richtiger_name)
         text_verloren.place(x=180, y=300)
         knopf_deaktieviren()
         kombinierte_liste = kombiniere_liste()
@@ -156,8 +164,8 @@ liste_für_überprüfung = []
 button_liste = []
 abgleich_liste = []
 
-random_Bild_index = random.randrange(0, len(anime_lists.anime_dictionarie))
-bild_roh_unverabreitet = Image.open(resource_path(list(anime_lists.anime_dictionarie.values())[random_Bild_index]))
+random_Bild_index = random.randrange(0, len(kopie_dic_von_anime_bilder))
+bild_roh_unverabreitet = Image.open(resource_path(list(kopie_dic_von_anime_bilder.values())[random_Bild_index]))
 bild_größe_setzen = bild_roh_unverabreitet.resize((180, 200))
 bild_auslesen = ImageTk.PhotoImage(bild_größe_setzen)
 bild_zum_label = tk.Label(image=bild_auslesen)
@@ -167,10 +175,10 @@ get_anime_name(liste_für_überprüfung, random_Bild_index)
 get_anime_name(liste_für_überprüfung, random_Bild_index)
 get_anime_name(liste_für_überprüfung, random_Bild_index)
 
-knopf_oben_links_name = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[0]]
-knopf_oben_rechts_name = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[1]]
-knopf_unten_links_name = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[2]]
-knopf_unten_rechts_name = list(anime_lists.anime_dictionarie)[liste_für_überprüfung[3]]
+knopf_oben_links_name = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[0]]
+knopf_oben_rechts_name = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[1]]
+knopf_unten_links_name = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[2]]
+knopf_unten_rechts_name = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[3]]
 
 knopf_oben_links = tk.Button(root, text=knopf_oben_links_name,
                              command=lambda: knopf_druck(knopf_oben_links_name, knopf_oben_links, random_Bild_index))
@@ -196,9 +204,11 @@ def knöpfe_für_game_zeigen():
     knopf_starte_game.destroy()
 
 
-knopf_starte_game = tk.Button(root, text='Start', command=lambda: knöpfe_für_game_zeigen())
+knopf_starte_game = tk.Button(root, text='Bild Namen erraten', command=lambda: knöpfe_für_game_zeigen())
 
 knopf_starte_game.place(x=170, y=150, width=120, height=60)
+
+root.resizable(False, False)
 
 window_width = 480
 window_height = 500
