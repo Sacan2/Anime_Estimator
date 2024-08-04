@@ -1,4 +1,4 @@
-anime_dictionarie = {
+anime_list_easy = {
     "Denji": "./Bilder/denji.jpg",
     "Megumin": "./Bilder/megumin.jpg",
     "Emma": "./Bilder/nacken_tatto.png",
@@ -33,5 +33,8 @@ anime_dictionarie = {
     "Yuu": "./Bilder/Yuu.jpg",
     "Matsuboshi": "./Bilder/Matsuboshi.jpg",
     "Chika": "./Bilder/Chika.jpg",
+
+}
+anime_list_medium = {
 
 }

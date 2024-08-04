@@ -8,9 +8,7 @@ import anime_lists
 richtige_antworten = 0
 falsche_antworten = 0
 
-kopie_dic_von_anime_bilder = anime_lists.anime_dictionarie
-
-print(kopie_dic_von_anime_bilder)
+kopie_dic_von_anime_bilder = anime_lists.anime_list_easy
 
 
 def resource_path(relative_path):
@@ -25,6 +23,14 @@ def resource_path(relative_path):
 
 # Fenster erstellen
 root = tk.Tk()
+
+
+def schwierigkeit_einstelllen():
+    text_für_schwierigkeit.place(x=170, y=80)
+    knopf_leichter_modus.place(x=140, y=150, width=200, height=60)
+    knopf_medium_modus.place(x=140, y=220, width=200, height=60)
+    knopf_weeb_modus.place(x=140, y=290, width=200, height=60)
+    knopf_starte_game.place(x=700)
 
 
 def get_anime_name(liste_für_überprüfung_parameter, bild_index):
@@ -196,6 +202,12 @@ text_verloren = tk.Label(root, text="Du hast es verkackt")
 
 
 def knöpfe_für_game_zeigen():
+    # Die alten auswahlen weg machen
+    text_für_schwierigkeit.place(x=700)
+    knopf_leichter_modus.place(x=700)
+    knopf_medium_modus.place(x=700)
+    knopf_weeb_modus.place(x=700)
+    # Die neuen auswahlen einblenden
     knopf_oben_links.place(x=50, y=250, width=120, height=40)
     knopf_oben_rechts.place(x=300, y=250, width=120, height=40)
     knopf_unten_links.place(x=50, y=350, width=120, height=40)
@@ -204,9 +216,18 @@ def knöpfe_für_game_zeigen():
     knopf_starte_game.destroy()
 
 
-knopf_starte_game = tk.Button(root, text='Bild Namen erraten', command=lambda: knöpfe_für_game_zeigen())
+knopf_starte_game = tk.Button(root, text='Bild Namen erraten', command=lambda: schwierigkeit_einstelllen())
 
 knopf_starte_game.place(x=170, y=150, width=120, height=60)
+
+text_für_schwierigkeit = tk.Label(root, text="Wähle die Schwierigkeit aus")
+
+# Easy List mode
+knopf_leichter_modus = tk.Button(root, text="Ich schaue wenig Animes", command=lambda: knöpfe_für_game_zeigen())
+# Medium List mode
+knopf_medium_modus = tk.Button(root, text="Ich schaue zu viele")
+# Weeb List mode
+knopf_weeb_modus = tk.Button(root, text="Ich gehe nicht duschen")
 
 root.resizable(False, False)
 
