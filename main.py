@@ -49,7 +49,7 @@ def get_anime_name(liste_für_überprüfung_parameter, bild_index):
 
 
 def nächste_runde_vom_spiel():
-    if not len(kopie_dic_von_anime_bilder) <= 4:
+    if not len(kopie_dic_von_anime_bilder) <= 30:
         random_Bild_index_neu = random.randrange(0, len(kopie_dic_von_anime_bilder))
         bild_vom_charackter = Image.open(
             resource_path(list(kopie_dic_von_anime_bilder.values())[random_Bild_index_neu]))
@@ -92,8 +92,8 @@ def nächste_runde_vom_spiel():
         text_gewonnen.place(x=700, y=300)
         nächste_runde_knopf.place(x=700, y=410, width=120, height=40)
     else:
-        root.quit()
-        print(kopie_dic_von_anime_bilder)
+        alles_zu_seite_packen()
+        ergebnise_anzeigen()
 
 
 def spiel_zu_ende():
@@ -101,19 +101,53 @@ def spiel_zu_ende():
     spiel_gewonnen_text.place(x=170, y=300)
 
 
-def knöpf_für_die_nächste_runde():
+def ergebnise_anzeigen():
+    richtige_anzahl_an_antworten_als_text = tk.Label(root, text=f"Du hast {richtige_antworten} antworten richtig",
+                                                     background="green")
+
+    richtige_anzahl_an_antworten_als_text.place(x=160, y=110)
+
+    falsche_antworten_an_antworten_als_text = tk.Label(root, text=f"Du hast {falsche_antworten} falsche antworten",
+                                                       background="red")
+    falsche_antworten_an_antworten_als_text.place(x=160, y=170)
+
+
+def spiel_reset():
+    global kopie_dic_von_anime_bilder
+    kopie_dic_von_anime_bilder = anime_lists.anime_list_easy
+
+
+def alles_zu_seite_packen():
+    knopf_oben_links.place(x=700)
+    knopf_oben_rechts.place(x=700)
+    knopf_unten_links.place(x=700)
+    knopf_unten_rechts.place(x=700)
+    bild_zum_label.place(x=700)
+    text_gewonnen.place(x=700)
+    text_verloren.place(x=700)
+    nächste_runde_knopf.place(x=700)
+
+
+def knopf_für_die_nächste_runde():
     nächste_runde_knopf.place(x=180, y=410, width=120, height=40)
 
 
 def knopf_deaktieviren():
     knopf_oben_links.configure(bg="red")
     knopf_oben_links["state"] = "disabled"
+    knopf_oben_links.configure(disabledforeground="black")
+
     knopf_oben_rechts.configure(bg="red")
     knopf_oben_rechts["state"] = "disabled"
+    knopf_oben_rechts.configure(disabledforeground="black")
+
     knopf_unten_links.configure(bg="red")
     knopf_unten_links["state"] = "disabled"
+    knopf_unten_links.configure(disabledforeground="black")
+
     knopf_unten_rechts.configure(bg="red")
     knopf_unten_rechts["state"] = "disabled"
+    knopf_unten_rechts.configure(disabledforeground="black")
 
 
 def knopf_aktievieren():
@@ -150,7 +184,7 @@ def kombiniere_liste():
 def knopf_druck(gewählter_name, der_knopf, bild_index):
     global richtige_antworten, falsche_antworten
     richtiger_name = list(kopie_dic_von_anime_bilder)[bild_index]
-    knöpf_für_die_nächste_runde()
+    knopf_für_die_nächste_runde()
     if gewählter_name == richtiger_name:
         richtige_antworten += 1
         kopie_dic_von_anime_bilder.pop(richtiger_name)
