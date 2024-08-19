@@ -22,6 +22,27 @@ def resource_path(relative_path):
 root = tk.Tk()
 
 
+liste_für_überprüfung = []
+button_liste = []
+abgleich_liste = []
+richtige_antworten = 0
+falsche_antworten = 0
+
+knopf_starte_game = tk.Button(root, text='Bild Namen erraten', command=lambda: schwierigkeit_einstelllen())
+
+knopf_starte_game.place(x=170, y=150, width=120, height=60)
+
+text_für_schwierigkeit = tk.Label(root, text="Wähle die Schwierigkeit aus")
+
+# Easy List mode
+knopf_leichter_modus = tk.Button(root, text="Ich schaue wenig Animes", command=lambda: knöpfe_für_game_zeigen())
+# Medium List mode
+knopf_medium_modus = tk.Button(root, text="Ich schaue zu viele")
+# Weeb List mode
+knopf_weeb_modus = tk.Button(root, text="Ich gehe nicht duschen")
+kopie_dic_von_anime_bilder = anime_lists.anime_list_easy
+
+
 def schwierigkeit_einstelllen():
     text_für_schwierigkeit.place(x=170, y=80)
     knopf_leichter_modus.place(x=140, y=150, width=200, height=60)
@@ -44,119 +65,6 @@ def get_anime_name(liste_für_überprüfung_parameter, bild_index):
             liste_für_überprüfung_parameter.append(random_character_number)
             return character_name
 
-
-def nächste_runde_vom_spiel():
-    if not len(kopie_dic_von_anime_bilder) <= 4:
-        random_Bild_index_neu = random.randrange(0, len(kopie_dic_von_anime_bilder))
-        bild_vom_charackter = Image.open(
-            resource_path(list(kopie_dic_von_anime_bilder.values())[random_Bild_index_neu]))
-        character_bild_groeße = bild_vom_charackter.resize((180, 200))
-        verarbeitetes_bild = ImageTk.PhotoImage(character_bild_groeße)
-        bild_zum_label.config(image=verarbeitetes_bild)
-        bild_zum_label.image = verarbeitetes_bild
-        liste_für_überprüfung.clear()
-        button_liste.clear()
-        abgleich_liste.clear()
-
-        knopf_aktievieren()
-
-        get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
-        get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
-        get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
-        get_anime_name(liste_für_überprüfung, random_Bild_index_neu)
-
-        knopf_oben_links_name_neue_runde = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[0]]
-        knopf_oben_rechts_name_neue_runde = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[1]]
-        knopf_unten_links_name_neue_runde = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[2]]
-        knopf_unten_rechts_name_neue_runde = list(kopie_dic_von_anime_bilder)[liste_für_überprüfung[3]]
-
-        knopf_oben_links.config(text=knopf_oben_links_name_neue_runde,
-                                command=lambda: knopf_druck(knopf_oben_links_name_neue_runde, knopf_oben_links,
-                                                            random_Bild_index_neu))
-        knopf_oben_rechts.config(text=knopf_oben_rechts_name_neue_runde,
-                                 command=lambda: knopf_druck(knopf_oben_rechts_name_neue_runde, knopf_oben_rechts,
-                                                             random_Bild_index_neu))
-        knopf_unten_links.config(text=knopf_unten_links_name_neue_runde,
-                                 command=lambda: knopf_druck(knopf_unten_links_name_neue_runde, knopf_unten_links,
-                                                             random_Bild_index_neu))
-        knopf_unten_rechts.config(text=knopf_unten_rechts_name_neue_runde,
-                                  command=lambda: knopf_druck(knopf_unten_rechts_name_neue_runde, knopf_unten_rechts,
-                                                              random_Bild_index_neu))
-
-        kombinierte_liste = kombiniere_liste()
-
-        text_verloren.place(x=700, y=300)
-        text_gewonnen.place(x=700, y=300)
-        nächste_runde_knopf.place(x=700, y=410, width=120, height=40)
-    else:
-
-        alles_zu_seite_packen()
-        ergebnise_anzeigen()
-
-
-def spiel_zu_ende():
-    spiel_gewonnen_text = tk.Label(root, text=f"Du hast {richtige_antworten} richtig geantwortet")
-    spiel_gewonnen_text.place(x=170, y=300)
-
-
-def ergebnise_anzeigen():
-    richtige_anzahl_an_antworten_als_Label = tk.Label(root, text=f"Du hast {richtige_antworten} antworten richtig",
-                                                      background="green")
-
-    falsche_antworten_an_antworten_als_Label = tk.Label(root, text=f"Du hast {falsche_antworten} falsche antworten",
-                                                        background="red")
-
-    richtige_anzahl_an_antworten_als_Label.place(x=160, y=110)
-    falsche_antworten_an_antworten_als_Label.place(x=160, y=170)
-
-
-def spiel_reset():
-    global kopie_dic_von_anime_bilder
-    kopie_dic_von_anime_bilder = anime_lists.anime_list_easy
-
-
-def alles_zu_seite_packen():
-    knopf_oben_links.place(x=700)
-    knopf_oben_rechts.place(x=700)
-    knopf_unten_links.place(x=700)
-    knopf_unten_rechts.place(x=700)
-    bild_zum_label.place(x=700)
-    text_gewonnen.place(x=700)
-    text_verloren.place(x=700)
-    nächste_runde_knopf.place(x=700)
-
-
-def knopf_für_die_nächste_runde():
-    nächste_runde_knopf.place(x=180, y=410, width=120, height=40)
-
-
-def knopf_deaktieviren():
-    knopf_oben_links.configure(bg="red")
-    knopf_oben_links["state"] = "disabled"
-    knopf_oben_links.configure(disabledforeground="black")
-
-    knopf_oben_rechts.configure(bg="red")
-    knopf_oben_rechts["state"] = "disabled"
-    knopf_oben_rechts.configure(disabledforeground="black")
-
-    knopf_unten_links.configure(bg="red")
-    knopf_unten_links["state"] = "disabled"
-    knopf_unten_links.configure(disabledforeground="black")
-
-    knopf_unten_rechts.configure(bg="red")
-    knopf_unten_rechts["state"] = "disabled"
-    knopf_unten_rechts.configure(disabledforeground="black")
-
-
-def knopf_aktievieren():
-    knopf_oben_links.configure(bg="SystemButtonFace")
-    knopf_oben_links["state"] = "active"
-    knopf_oben_rechts.configure(bg="SystemButtonFace")
-    knopf_oben_rechts["state"] = "active"
-    knopf_unten_links.configure(bg="SystemButtonFace")
-    knopf_unten_links["state"] = "active"
-    knopf_unten_rechts.configure(bg="SystemButtonFace")
-    knopf_unten_rechts["state"] = "active"
 
 
 def kombiniere_liste():
@@ -182,32 +90,21 @@ def kombiniere_liste():
 def knopf_druck(gewählter_name, der_knopf, bild_index):
     global richtige_antworten, falsche_antworten
     richtiger_name = list(kopie_dic_von_anime_bilder)[bild_index]
-    knopf_für_die_nächste_runde()
+
     if gewählter_name == richtiger_name:
         richtige_antworten += 1
         kopie_dic_von_anime_bilder.pop(richtiger_name)
         text_gewonnen.place(x=210, y=300)
-        knopf_deaktieviren()
+
         der_knopf.configure(bg="green")
     else:
         falsche_antworten += 1
         kopie_dic_von_anime_bilder.pop(richtiger_name)
         text_verloren.place(x=180, y=300)
-        knopf_deaktieviren()
         kombinierte_liste = kombiniere_liste()
         kombinierte_liste[richtiger_name].configure(bg="green")
 
 
-liste_für_überprüfung = []
-button_liste = []
-abgleich_liste = []
-richtige_antworten = 0
-falsche_antworten = 0
-
-kopie_dic_von_anime_bilder = anime_lists.anime_list_easy
-
-def schwierigkeit_aussuchen():
-    print(123)
 
 
 random_Bild_index = random.randrange(0, len(kopie_dic_von_anime_bilder))
@@ -236,7 +133,7 @@ knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name,
                                command=lambda: knopf_druck(knopf_unten_rechts_name, knopf_unten_rechts,
                                                            random_Bild_index))
 
-nächste_runde_knopf = tk.Button(root, text="Nächste Runde", command=lambda: nächste_runde_vom_spiel())
+#nächste_runde_knopf = tk.Button(root, text="Nächste Runde", command=lambda: nächste_runde_vom_spiel())
 text_gewonnen = tk.Label(root, text="richtig")
 text_verloren = tk.Label(root, text="Du hast es verkackt")
 
@@ -258,18 +155,7 @@ def knöpfe_für_game_zeigen():
     knopf_starte_game.destroy()
 
 
-knopf_starte_game = tk.Button(root, text='Bild Namen erraten', command=lambda: schwierigkeit_einstelllen())
 
-knopf_starte_game.place(x=170, y=150, width=120, height=60)
-
-text_für_schwierigkeit = tk.Label(root, text="Wähle die Schwierigkeit aus")
-
-# Easy List mode
-knopf_leichter_modus = tk.Button(root, text="Ich schaue wenig Animes", command=lambda: knöpfe_für_game_zeigen())
-# Medium List mode
-knopf_medium_modus = tk.Button(root, text="Ich schaue zu viele")
-# Weeb List mode
-knopf_weeb_modus = tk.Button(root, text="Ich gehe nicht duschen")
 
 root.resizable(False, False)
 

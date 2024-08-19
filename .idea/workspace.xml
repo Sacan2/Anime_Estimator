@@ -5,53 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Auswertung am Ende des Spiel wurde hinzugefügt als nächstes wird dafür gesorgt, dass man das Spiel neu starten kann. Da man nicht in der Lage ist es zu machen. Plus es muss noch gemacht, dass der Modus den man wählt das sich diese Liste wiederholt.">
-      <change afterPath="$PROJECT_DIR$/Bilder/Brook.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/Frieren.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/Kishibe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/Naruto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/Pochita.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/Sasuke.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/Shanks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/Todo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/Toji.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/eren.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/fern.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder/levi.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Annie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Catherine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Chika.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Edward.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Giyuu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Gojo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Gouhin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Griffith.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Guts.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Hange.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Haru.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Hiromi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Kaede.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Kayo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Maine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Matsuboshi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Mephisto.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Nina.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Rebecca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Reina.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Rikka.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Sanemi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Shirou.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Tadaomi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Thorkell.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Thors.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Yui.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Yuu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/Yuuta.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/denji.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/megumin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/nacken_tatto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder/roxy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/anime_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/anime_lists.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
