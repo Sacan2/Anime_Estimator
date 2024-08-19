@@ -5,10 +5,7 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import anime_lists
 
-richtige_antworten = 0
-falsche_antworten = 0
 
-kopie_dic_von_anime_bilder = anime_lists.anime_list_easy
 
 
 def resource_path(relative_path):
@@ -49,7 +46,7 @@ def get_anime_name(liste_für_überprüfung_parameter, bild_index):
 
 
 def nächste_runde_vom_spiel():
-    if not len(kopie_dic_von_anime_bilder) <= 30:
+    if not len(kopie_dic_von_anime_bilder) <= 4:
         random_Bild_index_neu = random.randrange(0, len(kopie_dic_von_anime_bilder))
         bild_vom_charackter = Image.open(
             resource_path(list(kopie_dic_von_anime_bilder.values())[random_Bild_index_neu]))
@@ -92,6 +89,7 @@ def nächste_runde_vom_spiel():
         text_gewonnen.place(x=700, y=300)
         nächste_runde_knopf.place(x=700, y=410, width=120, height=40)
     else:
+
         alles_zu_seite_packen()
         ergebnise_anzeigen()
 
@@ -102,14 +100,14 @@ def spiel_zu_ende():
 
 
 def ergebnise_anzeigen():
-    richtige_anzahl_an_antworten_als_text = tk.Label(root, text=f"Du hast {richtige_antworten} antworten richtig",
-                                                     background="green")
+    richtige_anzahl_an_antworten_als_Label = tk.Label(root, text=f"Du hast {richtige_antworten} antworten richtig",
+                                                      background="green")
 
-    richtige_anzahl_an_antworten_als_text.place(x=160, y=110)
+    falsche_antworten_an_antworten_als_Label = tk.Label(root, text=f"Du hast {falsche_antworten} falsche antworten",
+                                                        background="red")
 
-    falsche_antworten_an_antworten_als_text = tk.Label(root, text=f"Du hast {falsche_antworten} falsche antworten",
-                                                       background="red")
-    falsche_antworten_an_antworten_als_text.place(x=160, y=170)
+    richtige_anzahl_an_antworten_als_Label.place(x=160, y=110)
+    falsche_antworten_an_antworten_als_Label.place(x=160, y=170)
 
 
 def spiel_reset():
@@ -203,6 +201,14 @@ def knopf_druck(gewählter_name, der_knopf, bild_index):
 liste_für_überprüfung = []
 button_liste = []
 abgleich_liste = []
+richtige_antworten = 0
+falsche_antworten = 0
+
+kopie_dic_von_anime_bilder = anime_lists.anime_list_easy
+
+def schwierigkeit_aussuchen():
+    print(123)
+
 
 random_Bild_index = random.randrange(0, len(kopie_dic_von_anime_bilder))
 bild_roh_unverabreitet = Image.open(resource_path(list(kopie_dic_von_anime_bilder.values())[random_Bild_index]))
@@ -233,6 +239,8 @@ knopf_unten_rechts = tk.Button(root, text=knopf_unten_rechts_name,
 nächste_runde_knopf = tk.Button(root, text="Nächste Runde", command=lambda: nächste_runde_vom_spiel())
 text_gewonnen = tk.Label(root, text="richtig")
 text_verloren = tk.Label(root, text="Du hast es verkackt")
+
+
 
 
 def knöpfe_für_game_zeigen():
