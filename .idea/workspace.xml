@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Auswertung am Ende des Spiel wurde hinzugefügt als nächstes wird dafür gesorgt, dass man das Spiel neu starten kann. Da man nicht in der Lage ist es zu machen. Plus es muss noch gemacht, dass der Modus den man wählt das sich diese Liste wiederholt.">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="versuch den Code clean zu machen weil kein arsch es lesen kann.">
+      <change afterPath="$PROJECT_DIR$/window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -53,11 +54,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
     &quot;Python.anime_lists.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.window.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;clean__code&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/serha/PycharmProject/Anime_Estimator&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
@@ -71,7 +75,29 @@
       <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Game\Bilder" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Anime_Estimator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/tkinter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/tkinter/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="anime_lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Anime_Estimator" />
       <option name="ENV_FILES" value="" />
@@ -86,6 +112,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\serha\PycharmProject\Anime_Estimator\anime_lists.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Anime_Estimator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,8 +164,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="window" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Anime_Estimator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/window.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.window" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.anime_lists" />
       </list>
     </recent_temporary>
@@ -418,7 +491,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722894371553</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="versuch den Code clean zu machen weil kein arsch es lesen kann.">
+      <option name="closed" value="true" />
+      <created>1724079622330</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1724079622330</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,7 +507,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/clean_code" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -434,7 +527,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="4 Knöpfe aber ohne funktionen.&#10;Alles ist zentriert und hat seine größen angepasst. Jetzt muss die Logik gemacht werden." />
     <MESSAGE value="get_anime_name() wurde erstellt damit es den großen Codeblock ersetzt." />
     <MESSAGE value="Das Bild wird nicht länger hard gecoded vom Pfad direkt abgefrufen, sondern ihm Dictionary. &#10;In der Dictionary habe ich alle Pfade und dazu jeweilige Bilder eingefügt, sodass man direkt über den Namen ein Bild hat." />
     <MESSAGE value="Nur Kommentare hinzugefügt" />
@@ -459,7 +551,8 @@
     <MESSAGE value="Den Code ein Wenig optimeirt, nur dafür gesorgt, dass die Liste kopiert und nicht die Orginale Liste bearbeitet." />
     <MESSAGE value="Eine Auswahl wurde erstellt wobei man die Schwierigkeit auswählen kann." />
     <MESSAGE value="Auswertung am Ende des Spiel wurde hinzugefügt als nächstes wird dafür gesorgt, dass man das Spiel neu starten kann. Da man nicht in der Lage ist es zu machen. Plus es muss noch gemacht, dass der Modus den man wählt das sich diese Liste wiederholt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Auswertung am Ende des Spiel wurde hinzugefügt als nächstes wird dafür gesorgt, dass man das Spiel neu starten kann. Da man nicht in der Lage ist es zu machen. Plus es muss noch gemacht, dass der Modus den man wählt das sich diese Liste wiederholt." />
+    <MESSAGE value="versuch den Code clean zu machen weil kein arsch es lesen kann." />
+    <option name="LAST_COMMIT_MESSAGE" value="versuch den Code clean zu machen weil kein arsch es lesen kann." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -471,5 +564,10 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="bild_zum_label" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
