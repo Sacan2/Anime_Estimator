@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="versuch den Code clean zu machen weil kein arsch es lesen kann.">
-      <change afterPath="$PROJECT_DIR$/window.py" afterDir="false" />
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Das Fenster ist immer in der Mitte.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -499,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724079622330</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Das Fenster ist immer in der Mitte.">
+      <option name="closed" value="true" />
+      <created>1724231146593</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1724231146593</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +535,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="get_anime_name() wurde erstellt damit es den großen Codeblock ersetzt." />
     <MESSAGE value="Das Bild wird nicht länger hard gecoded vom Pfad direkt abgefrufen, sondern ihm Dictionary. &#10;In der Dictionary habe ich alle Pfade und dazu jeweilige Bilder eingefügt, sodass man direkt über den Namen ein Bild hat." />
     <MESSAGE value="Nur Kommentare hinzugefügt" />
     <MESSAGE value="Die Bilder sind jetzt random und nicht mehr fest gecoded" />
@@ -552,7 +559,8 @@
     <MESSAGE value="Eine Auswahl wurde erstellt wobei man die Schwierigkeit auswählen kann." />
     <MESSAGE value="Auswertung am Ende des Spiel wurde hinzugefügt als nächstes wird dafür gesorgt, dass man das Spiel neu starten kann. Da man nicht in der Lage ist es zu machen. Plus es muss noch gemacht, dass der Modus den man wählt das sich diese Liste wiederholt." />
     <MESSAGE value="versuch den Code clean zu machen weil kein arsch es lesen kann." />
-    <option name="LAST_COMMIT_MESSAGE" value="versuch den Code clean zu machen weil kein arsch es lesen kann." />
+    <MESSAGE value="Das Fenster ist immer in der Mitte." />
+    <option name="LAST_COMMIT_MESSAGE" value="Das Fenster ist immer in der Mitte." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
