@@ -4,10 +4,9 @@ anime_list_easy = {
     "Eren":"./Bilder/eren.jpg",
     "Levi":"./Bilder/levi.jpg",
     "Naruto":"./Bilder/Naruto.jpg",
-    "Sasuke":"./Bilder/Sasuke.jpg",
-
-
+    "Sasuke":"./Bilder/Sasuke.jpg"
 }
+
 anime_list_medium = {
     "Shanks":"./Bilder/Shanks.jpg",
     "Brook":"./Bilder/Brook.jpg",
