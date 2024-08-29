@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Habe den Buttons Methoden erstellt und diese ein wenig zu testen.">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Sehr viel muss gemacht wenig fortschritt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anime_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/anime_lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -516,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724439550184</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Sehr viel muss gemacht wenig fortschritt">
+      <option name="closed" value="true" />
+      <created>1724876255724</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1724876255724</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -544,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Nur Kommentare hinzugefügt" />
     <MESSAGE value="Die Bilder sind jetzt random und nicht mehr fest gecoded" />
     <MESSAGE value="Der Input wird von der Methode any_click (Die ich definitiv umbennen werde) erkannt. Jetzt kann ich anfang zu prüfen ob die wahl die richtige ist zum Bild. Villeicht fange ich vorher an das Problem zu lösen das immer die richtige Antwort eine der 4 auswahlen ist." />
     <MESSAGE value="Es werden nur noch Namen einmal ausgegeben. Grund dafür ist, weil ich not is anstatt not in verwendet habe. not is prüft nur lediglich ob ein Wert nicht vorhanden ist. Sobald der Wert nicht da ist gibt es einen True zurück, weshalb auch die Namen sich dupliziert haben, weil es immer alles als richtig ansah. Stattdessen wird erstmal geprüft ob sich der Name mit not in bereits in der Liste befindet sobald es tut gibt es ein False zurück." />
@@ -569,7 +574,8 @@
     <MESSAGE value="versuch den Code clean zu machen weil kein arsch es lesen kann." />
     <MESSAGE value="Das Fenster ist immer in der Mitte." />
     <MESSAGE value="Habe den Buttons Methoden erstellt und diese ein wenig zu testen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Habe den Buttons Methoden erstellt und diese ein wenig zu testen." />
+    <MESSAGE value="Sehr viel muss gemacht wenig fortschritt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sehr viel muss gemacht wenig fortschritt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
