@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="">
+    <list default="true" id="f1c43801-e31b-425c-9cf3-ca6fa952ef06" name="Changes" comment="Das Spiel mit Namen raten ist fertig. Es wird außerdem eine Auswertung gemacht und man nachdem das Spiel vorbei ist kann man die Schwierigkeit auswählen.">
+      <change afterPath="$PROJECT_DIR$/Bilder/azami.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder/feid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder/godo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder/jukai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder/moi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder/pitou.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder/roswal.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/anime_lists.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,22 +58,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.__init__.executor": "Run",
-    "Python.anime_lists.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.window.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "clean__code",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/serha/PycharmProject/Anime_Estimator",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.anime_lists.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.window.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;clean__code&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/serha/PycharmProject/Anime_Estimator&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\serha\PycharmProject\Anime_Estimator\Bilder" />
@@ -198,7 +205,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
       </set>
     </attachedChunks>
   </component>
@@ -531,7 +538,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724966547494</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Das Spiel mit Namen raten ist fertig. Es wird außerdem eine Auswertung gemacht und man nachdem das Spiel vorbei ist kann man die Schwierigkeit auswählen.">
+      <option name="closed" value="true" />
+      <created>1726337636016</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1726337636016</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,7 +574,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Der Input wird von der Methode any_click (Die ich definitiv umbennen werde) erkannt. Jetzt kann ich anfang zu prüfen ob die wahl die richtige ist zum Bild. Villeicht fange ich vorher an das Problem zu lösen das immer die richtige Antwort eine der 4 auswahlen ist." />
     <MESSAGE value="Es werden nur noch Namen einmal ausgegeben. Grund dafür ist, weil ich not is anstatt not in verwendet habe. not is prüft nur lediglich ob ein Wert nicht vorhanden ist. Sobald der Wert nicht da ist gibt es einen True zurück, weshalb auch die Namen sich dupliziert haben, weil es immer alles als richtig ansah. Stattdessen wird erstmal geprüft ob sich der Name mit not in bereits in der Liste befindet sobald es tut gibt es ein False zurück." />
     <MESSAGE value="Es werden überall in zufälligen Rheinfolgen die Namen plaziert eines ist immer richtig. der Richtige Name wird in die Liste liste_für_überprüfung = [] gepackt und mit einem random.shuffle werden alle Einträge in der Liste gemischt. die Methode get_anime_name() wird 4 mal aufgerufen damit die Liste gefüllt wird." />
     <MESSAGE value="Es wird geprüft ob der gewählte Charackter der richtige ist." />
@@ -584,7 +598,8 @@
     <MESSAGE value="Habe den Buttons Methoden erstellt und diese ein wenig zu testen." />
     <MESSAGE value="Sehr viel muss gemacht wenig fortschritt" />
     <MESSAGE value="Morgen programmiere ich die Logik die überprüft, ob die Auswahl die richtige ist." />
-    <option name="LAST_COMMIT_MESSAGE" value="Morgen programmiere ich die Logik die überprüft, ob die Auswahl die richtige ist." />
+    <MESSAGE value="Das Spiel mit Namen raten ist fertig. Es wird außerdem eine Auswertung gemacht und man nachdem das Spiel vorbei ist kann man die Schwierigkeit auswählen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Das Spiel mit Namen raten ist fertig. Es wird außerdem eine Auswertung gemacht und man nachdem das Spiel vorbei ist kann man die Schwierigkeit auswählen." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

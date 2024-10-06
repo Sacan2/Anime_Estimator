@@ -16,3 +16,15 @@ anime_list_medium = {
     "Pochita":"./Bilder/Pochita.jpg",
 
 }
+
+anime_list_hard = {
+    "Feitan" : "./Bilder/feid.jpg",
+    "Azami" : "./Bilder/azami.jpg",
+    "Mio" : "./Bilder/moi.jpg",
+    "Jukai" : "./Bilder/jukai.jpg",
+    "Neferpitou" : "./Bilder/pitou.jpg",
+    "Roswaal" : "./Bilder/roswal.jpg",
+    "Godo" : "./Bilder/godo.jpg",
+
+
+}

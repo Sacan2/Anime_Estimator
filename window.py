@@ -1,10 +1,9 @@
 import tkinter as tk
 import random
-from operator import index
 from tkinter import ttk
 from PIL import Image, ImageTk
 
-from anime_lists import anime_list_easy, anime_list_medium
+from anime_lists import anime_list_easy, anime_list_medium, anime_list_hard
 
 
 class App(tk.Tk):
@@ -42,6 +41,9 @@ class App(tk.Tk):
         #medium modus
         self.button_medium_mode = tk.Button(self, text="medium Modus", height=2, width=12)
         self.button_medium_mode.configure(command=lambda: self.schwierigkeit_ausgesucht("medium"))
+        #harter modus
+        self.button_hard_mode = tk.Button(self, text="harter modus", height=2, width=12)
+        self.button_hard_mode.configure(command=lambda: self.schwierigkeit_ausgesucht("hard"))
 
         #Die Game Buttons
         self.button_oben_links = tk.Button(self, height=2, width=12)
@@ -87,10 +89,12 @@ class App(tk.Tk):
         self.start_button_bild_aussuchen.place(x=700)
         self.button_easy_mode.place(x=190, y=150)
         self.button_medium_mode.place(x=190, y=210)
+        self.button_hard_mode.place(x=190, y=270)
 
     def schwierigkeit_ausgesucht(self, ausgesuchte_schwierigkeit):
         self.button_easy_mode.place(x=700)
         self.button_medium_mode.place(x=700)
+        self.button_hard_mode.place(x=700)
         #Buttons Zeigen
         self.button_oben_links.place(x=80, y=300)
         self.button_oben_rechts.place(x=280, y=300)
@@ -124,6 +128,7 @@ class App(tk.Tk):
 
     def ueberpruefen_ob_das_spiel_fertig_ist(self,ausgesuchte_antwort):
         if ausgesuchte_antwort == self.richtige_antwort:
+
             self.richtig_geratene_antworten += 1
         else:
             self.falsch_geratene_antworten += 1
@@ -138,7 +143,7 @@ class App(tk.Tk):
 
     def namen_aus_der_liste_holen(self):
         self.liste_fuer_das_gesamte.pop(self.richtige_antwort)
-        print(anime_list_easy)
+
         random_namen = random.sample(list(self.liste_fuer_das_gesamte), k=3)
         self.namen_fuer_buttons_liste = random_namen
         self.namen_fuer_buttons_liste.append(self.richtige_antwort)
@@ -152,7 +157,7 @@ class App(tk.Tk):
         self.button_oben_links.configure(command=lambda: self.ueberpruefen_ob_das_spiel_fertig_ist(self.button_oben_links.cget("text")))
         self.button_oben_rechts.configure(command=lambda: self.ueberpruefen_ob_das_spiel_fertig_ist(self.button_oben_rechts.cget("text")))
         self.button_unten_links.configure(command=lambda: self.ueberpruefen_ob_das_spiel_fertig_ist(self.button_unten_links.cget("text")))
-        self.button_unten_rechts.configure(command=lambda: self.ueberpruefen_ob_das_spiel_fertig_ist(self.button_unten_links.cget("text")))
+        self.button_unten_rechts.configure(command=lambda: self.ueberpruefen_ob_das_spiel_fertig_ist(self.button_unten_rechts.cget("text")))
 
     def namen_verteilen(self):
         # Namen_verteilen
@@ -185,6 +190,12 @@ class App(tk.Tk):
             random_index = random.randint(0, liste_laenge)
             bild = list(anime_list_medium.values())[random_index]
             self.liste_fuer_das_gesamte = anime_list_medium.copy()
+            return bild
+        elif schwierigkeit == "hard":
+            liste_laenge = len(anime_list_hard) - 1
+            random_index = random.randint(0, liste_laenge)
+            bild = list(anime_list_hard.values())[random_index]
+            self.liste_fuer_das_gesamte = anime_list_hard.copy()
             return bild
 
     def buttons_ausschalten_und_antwort_zeigen(self):
@@ -243,5 +254,8 @@ class App(tk.Tk):
         self.richtige_antworten.place(x=700)
         self.falsche_antworten_text.place(x=700)
         self.falsche_antworten.place(x=700)
+        self.richtig_geratene_antworten = 0
+        self.falsch_geratene_antworten = 0
+
 
         self.schwierigkeit_anzeigen()
