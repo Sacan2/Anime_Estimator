@@ -257,5 +257,4 @@ class App(tk.Tk):
         self.richtig_geratene_antworten = 0
         self.falsch_geratene_antworten = 0
 
-
         self.schwierigkeit_anzeigen()
